@@ -1,0 +1,1064 @@
+[2025-04-07T08:10:55.824+0000] {processor.py:157} INFO - Started process (PID=5665) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:10:55.826+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:10:55.833+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:10:55.832+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:10:56.688+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:10:57.072+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:10:57.071+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:10:57.115+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:10:57.115+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:10:57.146+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 1.335 seconds
+[2025-04-07T08:11:27.689+0000] {processor.py:157} INFO - Started process (PID=5707) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:11:27.690+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:11:27.692+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:11:27.691+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:11:27.953+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:11:27.975+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:11:27.974+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:11:27.995+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:11:27.994+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:11:28.015+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.329 seconds
+[2025-04-07T08:11:58.322+0000] {processor.py:157} INFO - Started process (PID=5718) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:11:58.323+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:11:58.324+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:11:58.324+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:11:58.582+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:11:58.605+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:11:58.604+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:11:58.625+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:11:58.625+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:11:58.749+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.430 seconds
+[2025-04-07T08:12:28.836+0000] {processor.py:157} INFO - Started process (PID=5729) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:12:28.837+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:12:28.838+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:12:28.838+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:12:29.099+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:12:29.125+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:12:29.124+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:12:29.147+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:12:29.147+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:12:29.168+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.335 seconds
+[2025-04-07T08:12:59.302+0000] {processor.py:157} INFO - Started process (PID=5740) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:12:59.303+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:12:59.304+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:12:59.304+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:12:59.552+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:12:59.576+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:12:59.575+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:12:59.597+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:12:59.596+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:12:59.618+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.319 seconds
+[2025-04-07T08:13:30.358+0000] {processor.py:157} INFO - Started process (PID=5751) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:13:30.360+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:13:30.361+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:13:30.360+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:13:30.620+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:13:30.644+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:13:30.644+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:13:30.664+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:13:30.664+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:13:30.687+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.332 seconds
+[2025-04-07T08:14:01.538+0000] {processor.py:157} INFO - Started process (PID=5762) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:14:01.539+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:14:01.541+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:14:01.540+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:14:01.813+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:14:01.836+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:14:01.836+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:14:01.855+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:14:01.855+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:14:01.875+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.342 seconds
+[2025-04-07T08:14:32.735+0000] {processor.py:157} INFO - Started process (PID=5773) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:14:32.737+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:14:32.738+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:14:32.737+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:14:32.987+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:14:33.009+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:14:33.009+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:14:33.028+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:14:33.028+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:14:33.142+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.410 seconds
+[2025-04-07T08:15:03.997+0000] {processor.py:157} INFO - Started process (PID=5784) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:15:03.998+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:15:03.999+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:15:03.998+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:15:04.243+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:15:04.264+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:15:04.264+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:15:04.377+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:15:04.376+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:15:04.398+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.405 seconds
+[2025-04-07T08:15:35.015+0000] {processor.py:157} INFO - Started process (PID=5795) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:15:35.016+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:15:35.017+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:15:35.016+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:15:35.297+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:15:35.323+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:15:35.322+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:15:35.346+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:15:35.346+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:15:35.368+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.357 seconds
+[2025-04-07T08:16:05.503+0000] {processor.py:157} INFO - Started process (PID=5806) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:16:05.504+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:16:05.505+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:16:05.504+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:16:05.819+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:16:05.847+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:16:05.847+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:16:05.870+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:16:05.870+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:16:05.892+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.394 seconds
+[2025-04-07T08:16:36.748+0000] {processor.py:157} INFO - Started process (PID=5817) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:16:36.749+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:16:36.750+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:16:36.749+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:16:37.027+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:16:37.051+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:16:37.051+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:16:37.071+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:16:37.071+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:16:37.095+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.350 seconds
+[2025-04-07T08:17:08.034+0000] {processor.py:157} INFO - Started process (PID=5828) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:17:08.035+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:17:08.036+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:17:08.036+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:17:08.303+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:17:08.327+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:17:08.327+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:17:08.347+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:17:08.347+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:17:08.369+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.338 seconds
+[2025-04-07T08:17:38.451+0000] {processor.py:157} INFO - Started process (PID=5839) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:17:38.452+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:17:38.453+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:17:38.452+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:17:38.722+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:17:38.748+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:17:38.748+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:17:38.942+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:17:38.942+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:17:38.965+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.517 seconds
+[2025-04-07T08:18:09.585+0000] {processor.py:157} INFO - Started process (PID=5850) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:18:09.586+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:18:09.588+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:18:09.587+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:18:09.877+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:18:09.899+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:18:09.899+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:18:09.923+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:18:09.923+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:18:09.943+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.363 seconds
+[2025-04-07T08:18:40.024+0000] {processor.py:157} INFO - Started process (PID=5861) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:18:40.025+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:18:40.027+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:18:40.026+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:18:40.363+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:18:40.394+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:18:40.393+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:18:40.421+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:18:40.420+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:18:40.449+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.429 seconds
+[2025-04-07T08:19:11.132+0000] {processor.py:157} INFO - Started process (PID=5872) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:19:11.133+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:19:11.134+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:19:11.134+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:19:11.423+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:19:11.449+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:19:11.449+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:19:11.472+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:19:11.472+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:19:11.496+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.369 seconds
+[2025-04-07T08:19:42.357+0000] {processor.py:157} INFO - Started process (PID=5883) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:19:42.358+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:19:42.359+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:19:42.359+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:19:42.677+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:19:42.706+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:19:42.705+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:19:42.731+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:19:42.731+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:19:42.759+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.406 seconds
+[2025-04-07T08:20:12.947+0000] {processor.py:157} INFO - Started process (PID=5894) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:20:12.948+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:20:12.949+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:20:12.948+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:20:13.257+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:20:13.287+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:20:13.286+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:20:13.447+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:20:13.447+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:20:13.471+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.527 seconds
+[2025-04-07T08:20:44.300+0000] {processor.py:157} INFO - Started process (PID=5905) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:20:44.302+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:20:44.303+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:20:44.303+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:20:44.595+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:20:44.622+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:20:44.622+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:20:44.755+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:20:44.755+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:20:44.778+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.481 seconds
+[2025-04-07T08:21:14.900+0000] {processor.py:157} INFO - Started process (PID=5916) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:21:14.901+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:21:14.902+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:21:14.902+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:21:15.288+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:21:15.323+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:21:15.323+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:21:15.347+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:21:15.347+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:21:15.373+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.477 seconds
+[2025-04-07T08:21:46.307+0000] {processor.py:157} INFO - Started process (PID=5927) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:21:46.308+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:21:46.309+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:21:46.309+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:21:46.594+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:21:46.622+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:21:46.622+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:21:46.645+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:21:46.645+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:21:46.667+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.363 seconds
+[2025-04-07T08:22:16.775+0000] {processor.py:157} INFO - Started process (PID=5938) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:22:16.776+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:22:16.777+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:22:16.777+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:22:17.050+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:22:17.077+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:22:17.077+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:22:17.100+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:22:17.100+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:22:17.124+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.352 seconds
+[2025-04-07T08:22:47.179+0000] {processor.py:157} INFO - Started process (PID=5949) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:22:47.180+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:22:47.181+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:22:47.181+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:22:47.446+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:22:47.469+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:22:47.469+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:22:47.490+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:22:47.490+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:22:47.612+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.437 seconds
+[2025-04-07T08:23:18.373+0000] {processor.py:157} INFO - Started process (PID=5960) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:23:18.374+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:23:18.375+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:23:18.374+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:23:18.641+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:23:18.669+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:23:18.669+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:23:18.792+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:23:18.792+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:23:18.814+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.445 seconds
+[2025-04-07T08:23:49.544+0000] {processor.py:157} INFO - Started process (PID=5971) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:23:49.545+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:23:49.546+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:23:49.545+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:23:49.809+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:23:49.838+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:23:49.838+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:23:49.860+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:23:49.860+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:23:49.881+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.340 seconds
+[2025-04-07T08:24:19.953+0000] {processor.py:157} INFO - Started process (PID=5982) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:24:19.954+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:24:19.955+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:24:19.954+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:24:20.225+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:24:20.250+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:24:20.250+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:24:20.273+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:24:20.273+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:24:20.295+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.346 seconds
+[2025-04-07T08:24:51.158+0000] {processor.py:157} INFO - Started process (PID=5993) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:24:51.159+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:24:51.160+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:24:51.159+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:24:51.407+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:24:51.431+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:24:51.431+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:24:51.451+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:24:51.451+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:24:51.472+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.317 seconds
+[2025-04-07T08:25:21.543+0000] {processor.py:157} INFO - Started process (PID=6004) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:25:21.544+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:25:21.545+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:25:21.545+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:25:21.842+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:25:21.866+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:25:21.866+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:25:21.888+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:25:21.888+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:25:22.003+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.463 seconds
+[2025-04-07T08:25:52.759+0000] {processor.py:157} INFO - Started process (PID=6015) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:25:52.760+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:25:52.761+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:25:52.761+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:25:53.024+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:25:53.049+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:25:53.049+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:25:53.199+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:25:53.198+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:25:53.233+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.477 seconds
+[2025-04-07T08:26:24.204+0000] {processor.py:157} INFO - Started process (PID=6026) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:26:24.205+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:26:24.206+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:26:24.206+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:26:24.464+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:26:24.488+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:26:24.488+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:26:24.509+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:26:24.509+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:26:24.530+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.329 seconds
+[2025-04-07T08:26:54.516+0000] {processor.py:157} INFO - Started process (PID=6037) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:26:54.517+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:26:54.517+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:26:54.517+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:26:54.771+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:26:54.798+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:26:54.797+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:26:54.819+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:26:54.819+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:26:54.842+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.329 seconds
+[2025-04-07T08:32:49.683+0000] {processor.py:157} INFO - Started process (PID=6053) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:32:49.686+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:32:49.688+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:32:49.687+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:32:50.613+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:32:50.689+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:32:50.688+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:32:50.741+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:32:50.741+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:32:50.781+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 1.106 seconds
+[2025-04-07T08:33:20.904+0000] {processor.py:157} INFO - Started process (PID=6066) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:33:20.908+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:33:20.910+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:33:20.910+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:33:21.198+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:33:21.229+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:33:21.229+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:33:21.259+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:33:21.258+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:33:21.402+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.504 seconds
+[2025-04-07T08:33:52.124+0000] {processor.py:157} INFO - Started process (PID=6077) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:33:52.125+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:33:52.127+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:33:52.126+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:33:52.489+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:33:52.549+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:33:52.548+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:33:52.715+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:33:52.715+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:33:52.740+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.620 seconds
+[2025-04-07T08:34:23.584+0000] {processor.py:157} INFO - Started process (PID=6088) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:34:23.585+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:34:23.586+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:34:23.586+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:34:23.853+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:34:23.878+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:34:23.878+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:34:24.015+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:34:24.015+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:34:24.037+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.456 seconds
+[2025-04-07T08:34:54.110+0000] {processor.py:157} INFO - Started process (PID=6099) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:34:54.111+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:34:54.112+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:34:54.112+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:34:54.395+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:34:54.421+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:34:54.420+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:34:54.443+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:34:54.443+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:34:54.465+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.358 seconds
+[2025-04-07T08:35:25.414+0000] {processor.py:157} INFO - Started process (PID=6110) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:35:25.415+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:35:25.416+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:35:25.416+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:35:25.685+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:35:25.710+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:35:25.709+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:35:25.730+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:35:25.730+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:35:25.751+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.340 seconds
+[2025-04-07T08:35:55.798+0000] {processor.py:157} INFO - Started process (PID=6121) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:35:55.799+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:35:55.800+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:35:55.800+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:35:56.074+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:35:56.102+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:35:56.101+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:35:56.125+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:35:56.125+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:35:56.149+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.354 seconds
+[2025-04-07T08:36:26.280+0000] {processor.py:157} INFO - Started process (PID=6132) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:36:26.281+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:36:26.281+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:36:26.281+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:36:26.580+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:36:26.607+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:36:26.607+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:36:26.736+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:36:26.736+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:36:26.759+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.482 seconds
+[2025-04-07T08:36:56.904+0000] {processor.py:157} INFO - Started process (PID=6143) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:36:56.905+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:36:56.906+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:36:56.906+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:36:57.176+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:36:57.203+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:36:57.203+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:36:57.335+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:36:57.335+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:36:57.356+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.455 seconds
+[2025-04-07T08:37:28.276+0000] {processor.py:157} INFO - Started process (PID=6154) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:37:28.277+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:37:28.278+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:37:28.278+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:37:28.546+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:37:28.572+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:37:28.572+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:37:28.594+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:37:28.594+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:37:28.619+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.346 seconds
+[2025-04-07T08:37:58.838+0000] {processor.py:157} INFO - Started process (PID=6165) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:37:58.839+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:37:58.840+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:37:58.840+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:37:59.140+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:37:59.169+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:37:59.168+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:37:59.193+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:37:59.193+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:37:59.213+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.378 seconds
+[2025-04-07T08:38:29.246+0000] {processor.py:157} INFO - Started process (PID=6176) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:38:29.247+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:38:29.248+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:38:29.247+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:38:29.526+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:38:29.552+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:38:29.551+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:38:29.574+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:38:29.574+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:38:29.596+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.353 seconds
+[2025-04-07T08:38:59.736+0000] {processor.py:157} INFO - Started process (PID=6187) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:38:59.737+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:38:59.738+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:38:59.737+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:39:00.003+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:39:00.031+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:39:00.031+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:39:00.152+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:39:00.151+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:39:00.174+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.442 seconds
+[2025-04-07T08:39:30.252+0000] {processor.py:157} INFO - Started process (PID=6198) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:39:30.253+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:39:30.253+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:39:30.253+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:39:30.519+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:39:30.544+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:39:30.544+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:39:30.674+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:39:30.673+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:39:30.697+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.448 seconds
+[2025-04-07T08:40:01.566+0000] {processor.py:157} INFO - Started process (PID=6209) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:40:01.567+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:40:01.568+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:40:01.568+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:40:01.851+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:40:01.881+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:40:01.880+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:40:02.016+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:40:02.016+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:40:02.038+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.476 seconds
+[2025-04-07T08:40:32.157+0000] {processor.py:157} INFO - Started process (PID=6220) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:40:32.158+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:40:32.159+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:40:32.159+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:40:32.439+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:40:32.466+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:40:32.466+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:40:32.490+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:40:32.489+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:40:32.510+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.356 seconds
+[2025-04-07T08:41:02.564+0000] {processor.py:157} INFO - Started process (PID=6231) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:41:02.565+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:41:02.566+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:41:02.566+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:41:02.886+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:41:02.915+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:41:02.914+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:41:02.942+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:41:02.941+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:41:02.966+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.406 seconds
+[2025-04-07T08:41:33.839+0000] {processor.py:157} INFO - Started process (PID=6242) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:41:33.840+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:41:33.841+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:41:33.841+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:41:34.187+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:41:34.213+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:41:34.213+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:41:34.237+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:41:34.236+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:41:34.363+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.527 seconds
+[2025-04-07T08:42:05.220+0000] {processor.py:157} INFO - Started process (PID=6253) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:42:05.221+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:42:05.222+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:42:05.222+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:42:05.587+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:42:05.627+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:42:05.626+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:42:05.788+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:42:05.787+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:42:05.816+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.600 seconds
+[2025-04-07T08:42:36.644+0000] {processor.py:157} INFO - Started process (PID=6264) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:42:36.645+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:42:36.646+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:42:36.645+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:42:36.921+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:42:36.946+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:42:36.946+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:42:37.069+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:42:37.069+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:42:37.092+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.452 seconds
+[2025-04-07T08:43:07.206+0000] {processor.py:157} INFO - Started process (PID=6275) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:43:07.208+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:43:07.211+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:43:07.211+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:43:07.483+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:43:07.512+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:43:07.512+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:43:07.536+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:43:07.536+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:43:07.561+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.359 seconds
+[2025-04-07T08:43:37.640+0000] {processor.py:157} INFO - Started process (PID=6286) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:43:37.641+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:43:37.641+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:43:37.641+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:43:37.905+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:43:37.932+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:43:37.931+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:43:37.954+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:43:37.954+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:43:37.976+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.340 seconds
+[2025-04-07T08:44:08.106+0000] {processor.py:157} INFO - Started process (PID=6297) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:44:08.107+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:44:08.108+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:44:08.107+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:44:08.407+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:44:08.434+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:44:08.434+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:44:08.457+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:44:08.456+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:44:08.483+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.381 seconds
+[2025-04-07T08:44:38.564+0000] {processor.py:157} INFO - Started process (PID=6308) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:44:38.565+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:44:38.566+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:44:38.566+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:44:38.841+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:44:38.870+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:44:38.870+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:44:38.995+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:44:38.994+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:44:39.016+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.455 seconds
+[2025-04-07T08:45:09.908+0000] {processor.py:157} INFO - Started process (PID=6319) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:45:09.910+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:45:09.911+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:45:09.911+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:45:10.204+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:45:10.231+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:45:10.231+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:45:10.359+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:45:10.358+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:45:10.381+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.476 seconds
+[2025-04-07T08:45:40.458+0000] {processor.py:157} INFO - Started process (PID=6330) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:45:40.459+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:45:40.460+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:45:40.460+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:45:40.730+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:45:40.864+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:45:40.863+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:45:40.883+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:45:40.882+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:45:40.906+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.451 seconds
+[2025-04-07T08:46:11.798+0000] {processor.py:157} INFO - Started process (PID=6341) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:46:11.799+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:46:11.800+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:46:11.800+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:46:12.075+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:46:12.101+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:46:12.101+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:46:12.123+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:46:12.123+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:46:12.146+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.351 seconds
+[2025-04-07T08:46:42.202+0000] {processor.py:157} INFO - Started process (PID=6352) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:46:42.203+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:46:42.203+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:46:42.203+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:46:42.514+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:46:42.541+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:46:42.541+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:46:42.566+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:46:42.566+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:46:42.591+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.393 seconds
+[2025-04-07T08:47:12.733+0000] {processor.py:157} INFO - Started process (PID=6363) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:47:12.734+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:47:12.735+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:47:12.735+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:47:13.068+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:47:13.098+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:47:13.098+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:47:13.124+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:47:13.124+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:47:13.258+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.528 seconds
+[2025-04-07T08:47:44.027+0000] {processor.py:157} INFO - Started process (PID=6374) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:47:44.028+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:47:44.029+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:47:44.029+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:47:44.380+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:47:44.408+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:47:44.407+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:47:44.555+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:47:44.555+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:47:44.578+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.554 seconds
+[2025-04-07T08:48:14.618+0000] {processor.py:157} INFO - Started process (PID=6385) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:48:14.619+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:48:14.620+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:48:14.620+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:48:14.887+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:48:14.914+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:48:14.914+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:48:15.034+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:48:15.034+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:48:15.057+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.442 seconds
+[2025-04-07T08:48:45.946+0000] {processor.py:157} INFO - Started process (PID=6396) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:48:45.947+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:48:45.948+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:48:45.948+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:48:46.214+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:48:46.239+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:48:46.238+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:48:46.260+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:48:46.260+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:48:46.285+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.342 seconds
+[2025-04-07T08:49:16.340+0000] {processor.py:157} INFO - Started process (PID=6407) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:49:16.341+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:49:16.342+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:49:16.342+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:49:16.633+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:49:16.660+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:49:16.659+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:49:16.684+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:49:16.684+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:49:16.707+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.370 seconds
+[2025-04-07T08:49:46.845+0000] {processor.py:157} INFO - Started process (PID=6418) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:49:46.847+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:49:46.848+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:49:46.848+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:49:47.260+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:49:47.289+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:49:47.288+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:49:47.312+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:49:47.312+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:49:47.447+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.605 seconds
+[2025-04-07T08:50:18.185+0000] {processor.py:157} INFO - Started process (PID=6429) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:50:18.186+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:50:18.187+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:50:18.186+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:50:18.452+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:50:18.476+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:50:18.476+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:50:18.600+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:50:18.600+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:50:18.620+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.438 seconds
+[2025-04-07T08:50:48.738+0000] {processor.py:157} INFO - Started process (PID=6440) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:50:48.739+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:50:48.740+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:50:48.739+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:50:49.003+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:50:49.029+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:50:49.029+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:50:49.149+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:50:49.149+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:50:49.170+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.435 seconds
+[2025-04-07T08:51:20.056+0000] {processor.py:157} INFO - Started process (PID=6451) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:51:20.057+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:51:20.058+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:51:20.058+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:51:20.321+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:51:20.448+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:51:20.448+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:51:20.467+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:51:20.467+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:51:20.489+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.435 seconds
+[2025-04-07T08:51:50.617+0000] {processor.py:157} INFO - Started process (PID=6462) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:51:50.618+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:51:50.619+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:51:50.619+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:51:50.897+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:51:50.923+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:51:50.923+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:51:50.946+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:51:50.946+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:51:50.970+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.356 seconds
+[2025-04-07T08:52:21.083+0000] {processor.py:157} INFO - Started process (PID=6473) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:52:21.084+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:52:21.085+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:52:21.084+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:52:21.349+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:52:21.376+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:52:21.376+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:52:21.398+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:52:21.398+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:52:21.423+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.343 seconds
+[2025-04-07T08:52:51.489+0000] {processor.py:157} INFO - Started process (PID=6484) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:52:51.490+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:52:51.490+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:52:51.490+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:52:51.752+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:52:51.777+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:52:51.777+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:52:51.922+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:52:51.921+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:52:51.944+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.458 seconds
+[2025-04-07T08:53:22.895+0000] {processor.py:157} INFO - Started process (PID=6495) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:53:22.897+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:53:22.899+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:53:22.898+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:53:23.194+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:53:23.222+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:53:23.221+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:53:23.342+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:53:23.341+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:53:23.365+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.474 seconds
+[2025-04-07T08:53:53.457+0000] {processor.py:157} INFO - Started process (PID=6506) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:53:53.458+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:53:53.459+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:53:53.459+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:53:53.726+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:53:53.853+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:53:53.853+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:53:53.877+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:53:53.877+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:53:53.901+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.447 seconds
+[2025-04-07T08:54:24.804+0000] {processor.py:157} INFO - Started process (PID=6517) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:54:24.805+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:54:24.806+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:54:24.805+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:54:25.074+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:54:25.099+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:54:25.098+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:54:25.121+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:54:25.121+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:54:25.143+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.342 seconds
+[2025-04-07T08:54:55.245+0000] {processor.py:157} INFO - Started process (PID=6528) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T08:54:55.246+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T08:54:55.247+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:54:55.247+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:54:55.522+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T08:54:55.549+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:54:55.549+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T08:54:55.573+0000] {logging_mixin.py:151} INFO - [2025-04-07T08:54:55.573+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T08:54:55.597+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.355 seconds
+[2025-04-07T09:00:56.690+0000] {processor.py:157} INFO - Started process (PID=6544) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:00:56.695+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:00:56.698+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:00:56.697+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:00:57.714+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:00:57.823+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:00:57.822+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:00:58.084+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:00:58.083+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:00:58.107+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 1.426 seconds
+[2025-04-07T09:01:28.437+0000] {processor.py:157} INFO - Started process (PID=6557) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:01:28.438+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:01:28.440+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:01:28.439+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:01:28.946+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:01:28.973+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:01:28.973+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:01:29.113+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:01:29.113+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:01:29.138+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.706 seconds
+[2025-04-07T09:02:00.030+0000] {processor.py:157} INFO - Started process (PID=6568) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:02:00.030+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:02:00.031+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:02:00.031+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:02:00.316+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:02:00.452+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:02:00.451+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:02:00.471+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:02:00.471+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:02:00.492+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.466 seconds
+[2025-04-07T09:02:31.354+0000] {processor.py:157} INFO - Started process (PID=6579) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:02:31.354+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:02:31.355+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:02:31.355+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:02:31.631+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:02:31.656+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:02:31.656+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:02:31.679+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:02:31.678+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:02:31.703+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.352 seconds
+[2025-04-07T09:03:01.854+0000] {processor.py:157} INFO - Started process (PID=6590) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:03:01.855+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:03:01.856+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:03:01.855+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:03:02.164+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:03:02.192+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:03:02.191+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:03:02.215+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:03:02.215+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:03:02.240+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.391 seconds
+[2025-04-07T09:03:33.179+0000] {processor.py:157} INFO - Started process (PID=6601) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:03:33.180+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:03:33.181+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:03:33.180+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:03:33.443+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:03:33.469+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:03:33.468+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:03:33.491+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:03:33.491+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:03:33.609+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.434 seconds
+[2025-04-07T09:04:03.694+0000] {processor.py:157} INFO - Started process (PID=6612) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:04:03.695+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:04:03.696+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:04:03.696+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:04:03.954+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:04:03.980+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:04:03.979+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:04:04.098+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:04:04.098+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:04:04.122+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.431 seconds
+[2025-04-07T09:04:35.041+0000] {processor.py:157} INFO - Started process (PID=6623) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:04:35.042+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:04:35.043+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:04:35.043+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:04:35.304+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:04:35.333+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:04:35.332+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:04:35.451+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:04:35.451+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:04:35.474+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.436 seconds
+[2025-04-07T09:05:05.567+0000] {processor.py:157} INFO - Started process (PID=6634) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:05:05.568+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:05:05.569+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:05:05.568+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:05:05.877+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:05:06.008+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:05:06.008+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:05:06.027+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:05:06.027+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:05:06.047+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.483 seconds
+[2025-04-07T09:05:36.868+0000] {processor.py:157} INFO - Started process (PID=6645) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:05:36.869+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:05:36.870+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:05:36.870+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:05:37.231+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:05:37.253+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:05:37.252+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:05:37.272+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:05:37.271+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:05:37.295+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.430 seconds
+[2025-04-07T09:06:07.338+0000] {processor.py:157} INFO - Started process (PID=6656) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:06:07.339+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:06:07.340+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:06:07.339+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:06:07.605+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:06:07.631+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:06:07.630+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:06:07.653+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:06:07.653+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:06:07.777+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.443 seconds
+[2025-04-07T09:06:37.857+0000] {processor.py:157} INFO - Started process (PID=6667) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:06:37.858+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:06:37.859+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:06:37.858+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:06:38.121+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:06:38.149+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:06:38.148+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:06:38.268+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:06:38.268+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:06:38.292+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.438 seconds
+[2025-04-07T09:07:09.196+0000] {processor.py:157} INFO - Started process (PID=6678) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:07:09.197+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:07:09.197+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:07:09.197+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:07:09.463+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:07:09.488+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:07:09.488+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:07:09.607+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:07:09.607+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:07:09.629+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.436 seconds
+[2025-04-07T09:07:39.728+0000] {processor.py:157} INFO - Started process (PID=6689) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:07:39.729+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:07:39.730+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:07:39.729+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:07:39.995+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:07:40.122+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:07:40.122+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:07:40.141+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:07:40.141+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:07:40.165+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.440 seconds
+[2025-04-07T09:08:11.044+0000] {processor.py:157} INFO - Started process (PID=6700) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:08:11.045+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:08:11.046+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:08:11.046+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:08:11.414+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:08:11.435+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:08:11.435+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:08:11.455+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:08:11.454+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:08:11.476+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.435 seconds
+[2025-04-07T09:13:30.923+0000] {processor.py:157} INFO - Started process (PID=6709) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:13:30.926+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:13:30.927+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:13:30.927+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:13:32.672+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:13:32.734+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:13:32.733+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:13:32.796+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:13:32.795+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:13:32.856+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 1.942 seconds
+[2025-04-07T09:14:02.930+0000] {processor.py:157} INFO - Started process (PID=6724) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:14:02.931+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:14:02.932+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:14:02.932+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:14:03.285+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:14:03.315+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:14:03.315+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:14:03.339+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:14:03.339+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:14:03.486+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.559 seconds
+[2025-04-07T09:14:34.250+0000] {processor.py:157} INFO - Started process (PID=6735) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:14:34.251+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:14:34.252+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:14:34.252+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:14:34.518+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:14:34.542+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:14:34.542+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:14:34.668+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:14:34.667+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:14:34.691+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.444 seconds
+[2025-04-07T09:15:04.767+0000] {processor.py:157} INFO - Started process (PID=6746) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:15:04.768+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:15:04.769+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:15:04.769+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:15:05.023+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:15:05.050+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:15:05.050+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:15:05.168+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:15:05.168+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:15:05.191+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.427 seconds
+[2025-04-07T09:15:36.093+0000] {processor.py:157} INFO - Started process (PID=6757) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:15:36.094+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:15:36.095+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:15:36.095+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:15:36.350+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:15:36.473+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:15:36.473+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:15:36.492+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:15:36.492+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:15:36.515+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.425 seconds
+[2025-04-07T09:16:06.673+0000] {processor.py:157} INFO - Started process (PID=6768) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:16:06.674+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:16:06.675+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:16:06.675+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:16:07.059+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:16:07.081+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:16:07.080+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:16:07.099+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:16:07.099+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:16:07.120+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.451 seconds
+[2025-04-07T09:16:38.019+0000] {processor.py:157} INFO - Started process (PID=6779) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:16:38.020+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:16:38.023+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:16:38.022+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:16:38.308+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:16:38.334+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:16:38.334+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:16:38.356+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:16:38.356+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:16:38.381+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.365 seconds
+[2025-04-07T09:17:08.471+0000] {processor.py:157} INFO - Started process (PID=6790) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:17:08.472+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:17:08.473+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:17:08.473+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:17:08.763+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:17:08.793+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:17:08.791+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:17:08.936+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:17:08.935+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:17:08.959+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.492 seconds
+[2025-04-07T09:17:39.898+0000] {processor.py:157} INFO - Started process (PID=6801) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:17:39.899+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:17:39.900+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:17:39.900+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:17:40.168+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:17:40.193+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:17:40.192+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:17:40.312+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:17:40.312+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:17:40.335+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.440 seconds
+[2025-04-07T09:18:10.410+0000] {processor.py:157} INFO - Started process (PID=6812) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:18:10.411+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:18:10.412+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:18:10.412+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:18:10.729+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:18:10.859+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:18:10.858+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:18:10.879+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:18:10.878+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:18:10.902+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.495 seconds
+[2025-04-07T09:18:41.736+0000] {processor.py:157} INFO - Started process (PID=6823) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:18:41.736+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:18:41.737+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:18:41.737+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:18:42.003+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:18:42.142+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:18:42.141+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:18:42.163+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:18:42.162+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:18:42.183+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.451 seconds
+[2025-04-07T09:19:12.257+0000] {processor.py:157} INFO - Started process (PID=6834) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:19:12.258+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:19:12.259+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:19:12.258+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:19:12.518+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:19:12.544+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:19:12.543+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:19:12.565+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:19:12.565+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:19:12.590+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.336 seconds
+[2025-04-07T09:19:42.690+0000] {processor.py:157} INFO - Started process (PID=6845) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:19:42.691+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:19:42.692+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:19:42.691+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:19:42.958+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:19:42.984+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:19:42.984+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:19:43.120+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:19:43.120+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:19:43.142+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.456 seconds
+[2025-04-07T09:20:14.057+0000] {processor.py:157} INFO - Started process (PID=6856) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:20:14.058+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:20:14.059+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:20:14.059+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:20:14.320+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:20:14.345+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:20:14.345+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:20:14.467+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:20:14.466+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:20:14.489+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.435 seconds
+[2025-04-07T09:20:44.565+0000] {processor.py:157} INFO - Started process (PID=6867) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:20:44.566+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:20:44.567+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:20:44.567+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:20:44.829+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:20:44.854+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:20:44.853+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:20:44.968+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:20:44.968+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:20:44.989+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.427 seconds
+[2025-04-07T09:21:15.098+0000] {processor.py:157} INFO - Started process (PID=6878) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:21:15.099+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:21:15.100+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:21:15.100+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:21:15.356+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:21:15.477+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:21:15.477+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:21:15.495+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:21:15.495+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:21:15.517+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.422 seconds
+[2025-04-07T09:21:45.626+0000] {processor.py:157} INFO - Started process (PID=6889) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:21:45.627+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:21:45.628+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:21:45.627+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:21:45.986+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:21:46.007+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:21:46.007+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:21:46.030+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:21:46.030+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:21:46.050+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.428 seconds
+[2025-04-07T09:22:16.119+0000] {processor.py:157} INFO - Started process (PID=6900) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:22:16.121+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:22:16.122+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:22:16.121+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:22:16.379+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:22:16.404+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:22:16.404+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:22:16.427+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:22:16.427+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:22:16.549+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.432 seconds
+[2025-04-07T09:22:46.637+0000] {processor.py:157} INFO - Started process (PID=6911) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:22:46.639+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:22:46.640+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:22:46.639+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:22:46.900+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:22:46.926+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:22:46.925+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:22:47.046+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:22:47.046+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:22:47.072+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.438 seconds
+[2025-04-07T09:23:18.002+0000] {processor.py:157} INFO - Started process (PID=6922) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:23:18.003+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:23:18.003+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:23:18.003+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:23:18.260+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:23:18.285+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:23:18.284+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:23:18.408+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:23:18.408+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:23:18.430+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.432 seconds
+[2025-04-07T09:23:48.491+0000] {processor.py:157} INFO - Started process (PID=6933) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:23:48.492+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:23:48.493+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:23:48.493+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:23:48.752+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:23:48.873+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:23:48.873+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:23:48.891+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:23:48.891+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:23:48.915+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.427 seconds
+[2025-04-07T09:24:18.979+0000] {processor.py:157} INFO - Started process (PID=6944) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:24:18.980+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:24:18.981+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:24:18.981+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:24:19.362+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:24:19.386+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:24:19.385+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:24:19.405+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:24:19.405+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:24:19.427+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.451 seconds
+[2025-04-07T09:24:49.496+0000] {processor.py:157} INFO - Started process (PID=6955) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:24:49.497+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:24:49.498+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:24:49.498+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:24:49.861+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:24:49.881+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:24:49.881+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:24:49.899+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:24:49.899+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:24:49.918+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.425 seconds
+[2025-04-07T09:25:19.996+0000] {processor.py:157} INFO - Started process (PID=6966) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:25:19.997+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:25:19.998+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:25:19.998+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:25:20.255+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:25:20.279+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:25:20.279+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:25:20.399+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:25:20.399+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:25:20.421+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.428 seconds
+[2025-04-07T09:25:50.533+0000] {processor.py:157} INFO - Started process (PID=6977) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:25:50.534+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:25:50.535+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:25:50.534+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:25:50.814+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:25:50.841+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:25:50.841+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:25:50.975+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:25:50.973+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:25:51.000+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.471 seconds
+[2025-04-07T09:26:21.820+0000] {processor.py:157} INFO - Started process (PID=6988) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:26:21.821+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:26:21.822+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:26:21.821+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:26:22.082+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:26:22.208+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:26:22.208+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:26:22.231+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:26:22.231+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:26:22.257+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.441 seconds
+[2025-04-07T09:26:52.610+0000] {processor.py:157} INFO - Started process (PID=6999) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:26:52.611+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:26:52.612+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:26:52.612+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:26:52.874+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:26:52.997+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:26:52.997+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:26:53.035+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:26:53.034+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:26:53.055+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.448 seconds
+[2025-04-07T09:27:23.150+0000] {processor.py:157} INFO - Started process (PID=7010) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:27:23.151+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:27:23.151+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:27:23.151+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:27:23.507+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:27:23.529+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:27:23.529+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:27:23.548+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:27:23.548+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:27:23.574+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.427 seconds
+[2025-04-07T09:27:54.511+0000] {processor.py:157} INFO - Started process (PID=7021) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:27:54.512+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:27:54.513+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:27:54.513+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:27:54.770+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:27:54.795+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:27:54.795+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:27:54.818+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:27:54.818+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:27:54.938+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.430 seconds
+[2025-04-07T09:28:25.049+0000] {processor.py:157} INFO - Started process (PID=7032) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:28:25.050+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:28:25.051+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:28:25.050+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:28:25.309+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:28:25.335+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:28:25.335+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:28:25.455+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:28:25.455+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:28:25.476+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.431 seconds
+[2025-04-07T09:28:56.362+0000] {processor.py:157} INFO - Started process (PID=7043) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:28:56.363+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:28:56.364+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:28:56.364+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:28:56.659+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:28:56.686+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:28:56.686+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:28:56.818+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:28:56.817+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:28:56.844+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.485 seconds
+[2025-04-07T09:29:27.770+0000] {processor.py:157} INFO - Started process (PID=7054) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:29:27.771+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:29:27.772+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:29:27.772+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:29:28.037+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:29:28.160+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:29:28.160+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:29:28.179+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:29:28.179+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:29:28.203+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.436 seconds
+[2025-04-07T09:29:58.286+0000] {processor.py:157} INFO - Started process (PID=7065) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:29:58.287+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:29:58.288+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:29:58.288+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:29:58.647+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:29:58.670+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:29:58.669+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:29:58.689+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:29:58.689+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:29:58.711+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.428 seconds
+[2025-04-07T09:30:29.617+0000] {processor.py:157} INFO - Started process (PID=7076) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:30:29.618+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:30:29.620+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:30:29.619+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:30:30.019+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:30:30.040+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:30:30.039+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:30:30.059+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:30:30.059+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:30:30.077+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.463 seconds
+[2025-04-07T09:31:00.163+0000] {processor.py:157} INFO - Started process (PID=7087) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:31:00.165+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:31:00.166+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:31:00.166+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:31:00.470+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:31:00.497+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:31:00.496+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:31:00.635+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:31:00.635+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:31:00.654+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.494 seconds
+[2025-04-07T09:31:31.499+0000] {processor.py:157} INFO - Started process (PID=7098) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:31:31.500+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:31:31.501+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:31:31.501+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:31:31.806+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:31:31.833+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:31:31.833+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:31:31.957+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:31:31.957+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:31:31.979+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.484 seconds
+[2025-04-07T09:32:02.901+0000] {processor.py:157} INFO - Started process (PID=7109) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:32:02.903+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:32:02.904+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:32:02.903+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:32:03.170+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:32:03.322+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:32:03.321+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:32:03.345+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:32:03.344+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:32:03.366+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.468 seconds
+[2025-04-07T09:32:34.256+0000] {processor.py:157} INFO - Started process (PID=7120) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:32:34.258+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:32:34.260+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:32:34.259+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:32:34.539+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:32:34.688+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:32:34.688+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:32:34.709+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:32:34.708+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:32:34.728+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.478 seconds
+[2025-04-07T09:33:05.675+0000] {processor.py:157} INFO - Started process (PID=7131) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:33:05.676+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:33:05.677+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:33:05.677+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:33:06.052+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:33:06.079+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:33:06.078+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:33:06.100+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:33:06.100+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:33:06.122+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.450 seconds
+[2025-04-07T09:33:37.079+0000] {processor.py:157} INFO - Started process (PID=7142) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:33:37.080+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:33:37.081+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:33:37.081+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:33:37.366+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:33:37.394+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:33:37.394+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:33:37.533+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:33:37.533+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:33:37.554+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.477 seconds
+[2025-04-07T09:54:43.898+0000] {processor.py:157} INFO - Started process (PID=7156) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:54:43.900+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:54:43.902+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:54:43.901+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:54:44.611+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:54:44.693+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:54:44.692+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:54:45.052+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:54:45.051+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:54:45.125+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 1.232 seconds
+[2025-04-07T09:55:15.462+0000] {processor.py:157} INFO - Started process (PID=7171) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:55:15.463+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:55:15.465+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:55:15.464+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:55:15.867+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:55:15.902+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:55:15.902+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:55:16.062+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:55:16.062+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:55:16.084+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.628 seconds
+[2025-04-07T09:55:46.804+0000] {processor.py:157} INFO - Started process (PID=7182) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:55:46.806+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:55:46.807+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:55:46.807+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:55:47.099+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:55:47.227+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:55:47.226+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:55:47.249+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:55:47.249+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:55:47.271+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.470 seconds
+[2025-04-07T09:56:18.178+0000] {processor.py:157} INFO - Started process (PID=7193) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:56:18.180+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:56:18.182+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:56:18.182+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:56:18.646+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:56:18.674+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:56:18.674+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:56:18.696+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:56:18.695+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:56:18.718+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.544 seconds
+[2025-04-07T09:56:49.586+0000] {processor.py:157} INFO - Started process (PID=7204) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:56:49.588+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:56:49.589+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:56:49.589+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:56:49.842+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:56:49.864+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:56:49.864+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:56:49.885+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:56:49.885+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:56:50.012+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.467 seconds
+[2025-04-07T09:57:20.138+0000] {processor.py:157} INFO - Started process (PID=7215) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:57:20.140+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:57:20.141+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:57:20.141+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:57:20.429+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:57:20.452+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:57:20.451+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:57:20.608+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:57:20.608+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:57:20.627+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.492 seconds
+[2025-04-07T09:57:51.388+0000] {processor.py:157} INFO - Started process (PID=7226) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:57:51.389+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:57:51.389+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:57:51.389+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:57:51.671+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:57:51.705+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:57:51.705+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:57:51.844+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:57:51.844+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:57:51.872+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.487 seconds
+[2025-04-07T09:58:22.759+0000] {processor.py:157} INFO - Started process (PID=7237) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:58:22.760+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:58:22.762+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:58:22.761+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:58:23.055+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:58:23.189+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:58:23.188+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:58:23.208+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:58:23.208+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:58:23.225+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.470 seconds
+[2025-04-07T09:58:54.091+0000] {processor.py:157} INFO - Started process (PID=7248) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:58:54.092+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:58:54.093+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:58:54.093+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:58:54.476+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:58:54.497+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:58:54.496+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:58:54.515+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:58:54.515+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:58:54.533+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.445 seconds
+[2025-04-07T09:59:25.439+0000] {processor.py:157} INFO - Started process (PID=7259) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:59:25.440+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:59:25.441+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:59:25.441+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:59:25.835+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:59:25.857+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:59:25.856+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:59:25.876+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:59:25.875+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:59:25.894+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.460 seconds
+[2025-04-07T09:59:56.748+0000] {processor.py:157} INFO - Started process (PID=7270) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T09:59:56.749+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T09:59:56.750+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:59:56.749+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:59:57.028+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T09:59:57.052+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:59:57.052+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T09:59:57.186+0000] {logging_mixin.py:151} INFO - [2025-04-07T09:59:57.185+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T09:59:57.208+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.463 seconds
+[2025-04-07T10:00:27.288+0000] {processor.py:157} INFO - Started process (PID=7281) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T10:00:27.289+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T10:00:27.290+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:00:27.290+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:00:27.577+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:00:27.604+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:00:27.604+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T10:00:27.737+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:00:27.737+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T10:00:27.755+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.471 seconds
+[2025-04-07T10:00:58.539+0000] {processor.py:157} INFO - Started process (PID=7292) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T10:00:58.540+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T10:00:58.541+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:00:58.541+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:00:58.810+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:00:58.944+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:00:58.944+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T10:00:58.963+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:00:58.963+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T10:00:58.980+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.444 seconds
+[2025-04-07T10:01:29.049+0000] {processor.py:157} INFO - Started process (PID=7303) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T10:01:29.050+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T10:01:29.051+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:01:29.050+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:01:29.496+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:01:29.528+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:01:29.528+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T10:01:29.551+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:01:29.550+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T10:01:29.574+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.529 seconds
+[2025-04-07T10:02:00.322+0000] {processor.py:157} INFO - Started process (PID=7314) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T10:02:00.324+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T10:02:00.325+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:02:00.325+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:02:00.713+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:02:00.733+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:02:00.732+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T10:02:00.752+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:02:00.752+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T10:02:00.771+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.451 seconds
+[2025-04-07T10:02:31.668+0000] {processor.py:157} INFO - Started process (PID=7325) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T10:02:31.669+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T10:02:31.670+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:02:31.669+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:02:32.088+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:02:32.112+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:02:32.111+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T10:02:32.143+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:02:32.143+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T10:02:32.171+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.506 seconds
+[2025-04-07T10:03:03.087+0000] {processor.py:157} INFO - Started process (PID=7336) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T10:03:03.089+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T10:03:03.089+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:03:03.089+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:03:03.363+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:03:03.391+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:03:03.390+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T10:03:03.523+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:03:03.523+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T10:03:03.541+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.457 seconds
+[2025-04-07T10:03:34.412+0000] {processor.py:157} INFO - Started process (PID=7347) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T10:03:34.414+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T10:03:34.417+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:03:34.416+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:03:34.862+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:03:35.039+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:03:35.039+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T10:03:35.074+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:03:35.074+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T10:03:35.100+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.693 seconds
+[2025-04-07T10:04:05.731+0000] {processor.py:157} INFO - Started process (PID=7358) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T10:04:05.732+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T10:04:05.734+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:04:05.733+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:04:06.130+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:04:06.152+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:04:06.152+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T10:04:06.172+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:04:06.171+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T10:04:06.191+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.462 seconds
+[2025-04-07T10:04:37.117+0000] {processor.py:157} INFO - Started process (PID=7369) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T10:04:37.118+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T10:04:37.119+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:04:37.119+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:04:37.510+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:04:37.533+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:04:37.532+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T10:04:37.556+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:04:37.556+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T10:04:37.579+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.465 seconds
+[2025-04-07T10:05:07.723+0000] {processor.py:157} INFO - Started process (PID=7380) to work on /opt/airflow/dags/ingestion.py
+[2025-04-07T10:05:07.725+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingestion.py for tasks to queue
+[2025-04-07T10:05:07.726+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:05:07.726+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:05:08.161+0000] {processor.py:839} INFO - DAG(s) dict_keys(['fetch_transaction_data_and_upload_to_hdfs']) retrieved from /opt/airflow/dags/ingestion.py
+[2025-04-07T10:05:08.190+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:05:08.190+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-07T10:05:08.214+0000] {logging_mixin.py:151} INFO - [2025-04-07T10:05:08.214+0000] {dag.py:3677} INFO - Setting next_dagrun for fetch_transaction_data_and_upload_to_hdfs to 2025-04-07T00:00:00+00:00, run_after=2025-04-08T00:00:00+00:00
+[2025-04-07T10:05:08.236+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingestion.py took 0.517 seconds

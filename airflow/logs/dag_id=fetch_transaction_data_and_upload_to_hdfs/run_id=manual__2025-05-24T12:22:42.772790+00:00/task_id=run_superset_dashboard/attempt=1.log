@@ -1,0 +1,84 @@
+[2025-05-24T12:29:23.002+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_superset_dashboard manual__2025-05-24T12:22:42.772790+00:00 [queued]>
+[2025-05-24T12:29:23.012+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_superset_dashboard manual__2025-05-24T12:22:42.772790+00:00 [queued]>
+[2025-05-24T12:29:23.013+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-05-24T12:29:23.026+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): run_superset_dashboard> on 2025-05-24 12:22:42.772790+00:00
+[2025-05-24T12:29:23.033+0000] {standard_task_runner.py:57} INFO - Started process 578 to run task
+[2025-05-24T12:29:23.036+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'run_superset_dashboard', 'manual__2025-05-24T12:22:42.772790+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/ETL.py', '--cfg-path', '/tmp/tmp64zvz936']
+[2025-05-24T12:29:23.039+0000] {standard_task_runner.py:85} INFO - Job 16: Subtask run_superset_dashboard
+[2025-05-24T12:29:23.091+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_superset_dashboard manual__2025-05-24T12:22:42.772790+00:00 [running]> on host 1190334ace1e
+[2025-05-24T12:29:23.295+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='run_superset_dashboard' AIRFLOW_CTX_EXECUTION_DATE='2025-05-24T12:22:42.772790+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-24T12:22:42.772790+00:00'
+[2025-05-24T12:29:23.297+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-05-24T12:29:23.298+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'docker exec superset python /app/dashboard/step1_connection_db.py && docker exec superset python /app/dashboard/step2_creation_of_datasets.py && docker exec superset python /app/dashboard/step3_create_charts.py && docker exec superset python /app/dashboard/step4_create_dashbord.py']
+[2025-05-24T12:29:23.310+0000] {subprocess.py:86} INFO - Output:
+[2025-05-24T12:29:28.349+0000] {subprocess.py:93} INFO - ✅ Login successful.
+[2025-05-24T12:29:28.350+0000] {subprocess.py:93} INFO - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6dHJ1ZSwiaWF0IjoxNzQ4MDg5NzYzLCJqdGkiOiJjZTc5NDk2Yy0yM2U5LTQ5YWMtOThiYS1jODAxMjNmNzJhNTciLCJ0eXBlIjoiYWNjZXNzIiwic3ViIjoxLCJuYmYiOjE3NDgwODk3NjMsImNzcmYiOiI3ZTJmNjMwNC0yYTQ3LTRkNjktOTA4MC1mMDFkZGI0NWUwYTIiLCJleHAiOjE3NDgwOTA2NjN9.i9544QaeES6gGqjmVnbmIKgB6zse0aTO97cSljZm1Jg
+[2025-05-24T12:29:28.351+0000] {subprocess.py:93} INFO - ✅ CSRF token received:
+[2025-05-24T12:29:28.353+0000] {subprocess.py:93} INFO - ImU0YTc4OGU1ODM0ZWJmOWQyOTIxMDdlYWNhZmU0MGVlNmE5NjNmNzUi.aDG7ow.c-zRm-0vOexQR6u5qNfp6V6tTKM
+[2025-05-24T12:29:28.356+0000] {subprocess.py:93} INFO - Status: 422
+[2025-05-24T12:29:28.357+0000] {subprocess.py:93} INFO - Response: {"message":"Database could not be created."}
+[2025-05-24T12:29:28.357+0000] {subprocess.py:93} INFO - 
+[2025-05-24T12:31:03.794+0000] {subprocess.py:93} INFO - ✅ Logged in successfully
+[2025-05-24T12:31:03.796+0000] {subprocess.py:93} INFO - ✅ CSRF token retrieved
+[2025-05-24T12:31:03.796+0000] {subprocess.py:93} INFO - ✅ Hive Warehouse database ID: 1
+[2025-05-24T12:31:03.797+0000] {subprocess.py:93} INFO - ✅ Dataset 'Distribution of Payment Methods' created successfully. ID: 1
+[2025-05-24T12:31:03.798+0000] {subprocess.py:93} INFO - ✅ Dataset 'Transaction Volume by Device Type' created successfully. ID: 2
+[2025-05-24T12:31:03.798+0000] {subprocess.py:93} INFO - ✅ Dataset 'Average Transaction Amount by Customer Age Group' created successfully. ID: 3
+[2025-05-24T12:31:03.798+0000] {subprocess.py:93} INFO - ✅ Dataset 'Number of Transactions by Month' created successfully. ID: 4
+[2025-05-24T12:31:03.799+0000] {subprocess.py:93} INFO - ✅ Dataset 'Proportion of Fraudulent Transactions' created successfully. ID: 5
+[2025-05-24T12:31:03.800+0000] {subprocess.py:93} INFO - ✅ Dataset 'Total Transaction Amount by Product Category' created successfully. ID: 6
+[2025-05-24T12:31:10.918+0000] {subprocess.py:93} INFO - 🔐 Authenticating with Superset...
+[2025-05-24T12:31:10.919+0000] {subprocess.py:93} INFO - ✅ Authentication successful
+[2025-05-24T12:31:10.920+0000] {subprocess.py:93} INFO - 
+[2025-05-24T12:31:10.921+0000] {subprocess.py:93} INFO - 🚀 Starting dashboard creation process...
+[2025-05-24T12:31:10.922+0000] {subprocess.py:93} INFO - 📊 Charts to create: 6
+[2025-05-24T12:31:10.922+0000] {subprocess.py:93} INFO - 🏗️ Dashboard name: Transaction Analytics Dashboard
+[2025-05-24T12:31:10.923+0000] {subprocess.py:93} INFO - ==================================================
+[2025-05-24T12:31:10.924+0000] {subprocess.py:93} INFO - 📊 Creating chart: Fraud Detection Overview
+[2025-05-24T12:31:10.925+0000] {subprocess.py:93} INFO - ✅ Chart 'Fraud Detection Overview' created (ID: 2)
+[2025-05-24T12:31:10.926+0000] {subprocess.py:93} INFO - 📊 Creating chart: Number of Transactions by Month
+[2025-05-24T12:31:10.926+0000] {subprocess.py:93} INFO - ✅ Chart 'Number of Transactions by Month' created (ID: 4)
+[2025-05-24T12:31:10.927+0000] {subprocess.py:93} INFO - 📊 Creating chart: Average Transaction Amount by Age Group
+[2025-05-24T12:31:10.928+0000] {subprocess.py:93} INFO - ✅ Chart 'Average Transaction Amount by Age Group' created (ID: 6)
+[2025-05-24T12:31:10.928+0000] {subprocess.py:93} INFO - 📊 Creating chart: Distribution of Payment Methods
+[2025-05-24T12:31:10.929+0000] {subprocess.py:93} INFO - ✅ Chart 'Distribution of Payment Methods' created (ID: 7)
+[2025-05-24T12:31:10.929+0000] {subprocess.py:93} INFO - 📊 Creating chart: Transaction Volume by Device Type
+[2025-05-24T12:31:10.930+0000] {subprocess.py:93} INFO - ✅ Chart 'Transaction Volume by Device Type' created (ID: 8)
+[2025-05-24T12:31:10.931+0000] {subprocess.py:93} INFO - 📊 Creating chart: Revenue by Product Category
+[2025-05-24T12:31:10.931+0000] {subprocess.py:93} INFO - ✅ Chart 'Revenue by Product Category' created (ID: 9)
+[2025-05-24T12:31:10.932+0000] {subprocess.py:93} INFO - 
+[2025-05-24T12:31:10.932+0000] {subprocess.py:93} INFO - 📈 Successfully created 6 out of 6 charts
+[2025-05-24T12:31:12.055+0000] {subprocess.py:93} INFO - 🔐 Authenticating with Superset...
+[2025-05-24T12:31:12.056+0000] {subprocess.py:93} INFO - ✅ Authentication successful
+[2025-05-24T12:31:12.056+0000] {subprocess.py:93} INFO - 
+[2025-05-24T12:31:12.057+0000] {subprocess.py:93} INFO - 🔍 Searching for charts by name...
+[2025-05-24T12:31:12.057+0000] {subprocess.py:93} INFO - ✅ Found chart 'Fraud Detection Overview' - ID: 2
+[2025-05-24T12:31:12.058+0000] {subprocess.py:93} INFO - ✅ Found chart 'Number of Transactions by Month' - ID: 4
+[2025-05-24T12:31:12.058+0000] {subprocess.py:93} INFO - ✅ Found chart 'Average Transaction Amount by Age Group' - ID: 6
+[2025-05-24T12:31:12.059+0000] {subprocess.py:93} INFO - ✅ Found chart 'Distribution of Payment Methods' - ID: 7
+[2025-05-24T12:31:12.059+0000] {subprocess.py:93} INFO - ✅ Found chart 'Transaction Volume by Device Type' - ID: 8
+[2025-05-24T12:31:12.060+0000] {subprocess.py:93} INFO - ✅ Found chart 'Revenue by Product Category' - ID: 9
+[2025-05-24T12:31:12.060+0000] {subprocess.py:93} INFO - 
+[2025-05-24T12:31:12.060+0000] {subprocess.py:93} INFO - 🚀 Creating dashboard '📊 Fraud Detection Dashboard'...
+[2025-05-24T12:31:12.061+0000] {subprocess.py:93} INFO - ✅ Dashboard '📊 Fraud Detection Dashboard' created successfully! ID: 2
+[2025-05-24T12:31:12.061+0000] {subprocess.py:93} INFO - 🔗 Adding 6 charts to the dashboard...
+[2025-05-24T12:31:12.061+0000] {subprocess.py:93} INFO - [1/6] Updating chart 2 to add to dashboard 2...
+[2025-05-24T12:31:12.061+0000] {subprocess.py:93} INFO - ✅ Chart 2 added to dashboard 2
+[2025-05-24T12:31:12.062+0000] {subprocess.py:93} INFO - [2/6] Updating chart 4 to add to dashboard 2...
+[2025-05-24T12:31:12.062+0000] {subprocess.py:93} INFO - ✅ Chart 4 added to dashboard 2
+[2025-05-24T12:31:12.062+0000] {subprocess.py:93} INFO - [3/6] Updating chart 6 to add to dashboard 2...
+[2025-05-24T12:31:12.062+0000] {subprocess.py:93} INFO - ✅ Chart 6 added to dashboard 2
+[2025-05-24T12:31:12.063+0000] {subprocess.py:93} INFO - [4/6] Updating chart 7 to add to dashboard 2...
+[2025-05-24T12:31:12.063+0000] {subprocess.py:93} INFO - ✅ Chart 7 added to dashboard 2
+[2025-05-24T12:31:12.063+0000] {subprocess.py:93} INFO - [5/6] Updating chart 8 to add to dashboard 2...
+[2025-05-24T12:31:12.063+0000] {subprocess.py:93} INFO - ✅ Chart 8 added to dashboard 2
+[2025-05-24T12:31:12.063+0000] {subprocess.py:93} INFO - [6/6] Updating chart 9 to add to dashboard 2...
+[2025-05-24T12:31:12.064+0000] {subprocess.py:93} INFO - ✅ Chart 9 added to dashboard 2
+[2025-05-24T12:31:12.064+0000] {subprocess.py:93} INFO - ✅ All charts added to dashboard 2
+[2025-05-24T12:31:12.064+0000] {subprocess.py:93} INFO - 🔗 View dashboard at: http://localhost:8088/superset/dashboard/2/
+[2025-05-24T12:31:12.065+0000] {subprocess.py:93} INFO - 
+[2025-05-24T12:31:12.065+0000] {subprocess.py:93} INFO - 🎉 Dashboard created successfully!
+[2025-05-24T12:31:12.065+0000] {subprocess.py:93} INFO -    🔗 Dashboard URL: http://localhost:8088/superset/dashboard/2/
+[2025-05-24T12:31:12.078+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-05-24T12:31:12.106+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=run_superset_dashboard, execution_date=20250524T122242, start_date=20250524T122923, end_date=20250524T123112
+[2025-05-24T12:31:12.138+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-05-24T12:31:12.155+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

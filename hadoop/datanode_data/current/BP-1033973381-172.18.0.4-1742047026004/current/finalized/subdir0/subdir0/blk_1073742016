@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.StringIndexerModel","timestamp":1746710743873,"sparkVersion":"3.5.5","uid":"StringIndexer_e9ef8a605f31","paramMap":{"handleInvalid":"keep","inputCol":"Customer Location","outputCol":"Customer Location_Index"},"defaultParamMap":{"handleInvalid":"error","outputCol":"StringIndexer_e9ef8a605f31__output","stringOrderType":"frequencyDesc"}}

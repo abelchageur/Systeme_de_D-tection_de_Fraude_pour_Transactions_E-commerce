@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.ImputerModel","timestamp":1746710749336,"sparkVersion":"3.5.5","uid":"Imputer_8323c3384700","paramMap":{"inputCol":"IsWeekend","outputCol":"IsWeekend_imputed","strategy":"median"},"defaultParamMap":{"missingValue":"NaN","outputCol":"Imputer_8323c3384700__output","strategy":"mean","relativeError":0.001}}

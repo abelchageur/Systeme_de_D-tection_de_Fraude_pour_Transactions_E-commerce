@@ -1,0 +1,25 @@
+[2025-05-09T18:14:35.871+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.check_hdfs_and_train_model manual__2025-05-09T18:14:22.099894+00:00 [queued]>
+[2025-05-09T18:14:35.885+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.check_hdfs_and_train_model manual__2025-05-09T18:14:22.099894+00:00 [queued]>
+[2025-05-09T18:14:35.885+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-05-09T18:14:35.905+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): check_hdfs_and_train_model> on 2025-05-09 18:14:22.099894+00:00
+[2025-05-09T18:14:35.911+0000] {standard_task_runner.py:57} INFO - Started process 5297 to run task
+[2025-05-09T18:14:35.917+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'check_hdfs_and_train_model', 'manual__2025-05-09T18:14:22.099894+00:00', '--job-id', '87', '--raw', '--subdir', 'DAGS_FOLDER/ingestion.py', '--cfg-path', '/tmp/tmpiode3pey']
+[2025-05-09T18:14:35.921+0000] {standard_task_runner.py:85} INFO - Job 87: Subtask check_hdfs_and_train_model
+[2025-05-09T18:14:35.983+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.check_hdfs_and_train_model manual__2025-05-09T18:14:22.099894+00:00 [running]> on host d4afc872a8aa
+[2025-05-09T18:14:36.089+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='check_hdfs_and_train_model' AIRFLOW_CTX_EXECUTION_DATE='2025-05-09T18:14:22.099894+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-09T18:14:22.099894+00:00'
+[2025-05-09T18:14:36.250+0000] {logging_mixin.py:151} INFO - ⚠️ No existing model found at hdfs://namenode:9000/user/root/model/fraud_detection. Starting training...
+[2025-05-09T18:14:36.671+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/ingestion.py", line 212, in check_model_and_train
+    raise Exception(f"Training failed with error: {train_result.stderr}")
+Exception: Training failed with error: python3: can't open file '/opt/spark/models/model.py': [Errno 2] No such file or directory
+
+[2025-05-09T18:14:36.691+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=check_hdfs_and_train_model, execution_date=20250509T181422, start_date=20250509T181435, end_date=20250509T181436
+[2025-05-09T18:14:36.708+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 87 for task check_hdfs_and_train_model (Training failed with error: python3: can't open file '/opt/spark/models/model.py': [Errno 2] No such file or directory
+; 5297)
+[2025-05-09T18:14:36.737+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-05-09T18:14:36.758+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

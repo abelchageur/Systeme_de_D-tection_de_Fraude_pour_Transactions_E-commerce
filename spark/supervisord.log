@@ -1,0 +1,192 @@
+hive://hive:10000/default
+--------------------------------------------------------------------------------------------------
+Distribution of Payment Methods
+------------------------------/
+SELECT 
+    dpm.payment_method AS payment_method,
+    COUNT(*) AS transaction_count
+FROM 
+    fact_transactions ft
+JOIN 
+    dim_payment_methods dpm ON ft.payment_method_id = dpm.payment_method_id
+GROUP BY 
+    dpm.payment_method
+ORDER BY 
+    transaction_count DESC
+    ---
+Transaction Volume by Device Type
+---------------------------------/
+SELECT 
+    dd.device_type AS device_type,
+    COUNT(*) AS transaction_count
+FROM 
+    fact_transactions ft
+JOIN 
+    dim_devices dd ON ft.device_id = dd.device_id
+GROUP BY 
+    dd.device_type
+ORDER BY 
+    transaction_count DESC
+    ---
+Average Transaction Amount by Customer Age Group
+-----------------------------------------------/
+SELECT 
+    dim_customers.age_group AS age_group, 
+    AVG(fact_transactions.transaction_amount) AS average_amount
+FROM 
+    fact_transactions
+JOIN 
+    dim_customers 
+    ON fact_transactions.customer_id = dim_customers.customer_id
+GROUP BY 
+    dim_customers.age_group
+    ---
+Number of Transactions by Month
+------------------------------/
+SELECT 
+    date_format(transaction_timestamp, 'MMMM') AS transaction_month,
+    MONTH(transaction_timestamp) AS month_number,
+    COUNT(*) AS transaction_count
+FROM 
+    fact_transactions
+GROUP BY 
+    date_format(transaction_timestamp, 'MMMM'),
+    MONTH(transaction_timestamp)
+ORDER BY 
+    month_number
+    ---
+Proportion of Fraudulent Transactions
+------------------------------------/
+SELECT 
+    CASE 
+        WHEN is_fraudulent THEN 'Fraudulent'
+        ELSE 'Non-Fraudulent'
+    END AS transaction_type,
+    COUNT(*) AS transaction_count
+FROM 
+    fact_transactions
+GROUP BY 
+    CASE 
+        WHEN is_fraudulent THEN 'Fraudulent'
+        ELSE 'Non-Fraudulent'
+    END
+    ---
+Total Transaction Amount by Product Category
+-------------------------------------------/
+SELECT 
+    dpc.product_category AS product_category,
+    SUM(ft.transaction_amount) AS total_transaction_amount
+FROM 
+    fact_transactions ft
+JOIN 
+    dim_product_categories dpc ON ft.product_category_id = dpc.product_category_id
+GROUP BY 
+    dpc.product_category
+    ---2025-05-23 08:06:01,724 INFO reaped unknown pid 1732 (exit status 0)
+2025-05-23 08:11:20,147 INFO reaped unknown pid 1900 (exit status 0)
+2025-05-23 08:33:35,370 INFO reaped unknown pid 2064 (exit status 0)
+2025-05-23 08:43:55,104 INFO reaped unknown pid 2441 (exit status 0)
+2025-05-23 08:58:25,499 INFO reaped unknown pid 2764 (exit status 0)
+2025-05-23 09:06:57,093 WARN received SIGTERM indicating exit request
+2025-05-23 09:06:57,146 INFO waiting for jupyter-notebook, spark-master to die
+2025-05-23 09:06:58,186 WARN stopped: spark-master (terminated by SIGTERM)
+2025-05-23 09:07:00,364 INFO stopped: jupyter-notebook (exit status 0)
+2025-05-23 09:18:52,126 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-23 09:18:52,149 INFO supervisord started with pid 1
+2025-05-23 09:18:53,101 INFO spawned: 'jupyter-notebook' with pid 14
+2025-05-23 09:18:53,146 INFO spawned: 'spark-master' with pid 15
+2025-05-23 09:18:55,069 INFO success: jupyter-notebook entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-23 09:18:55,075 INFO success: spark-master entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-23 09:22:42,473 INFO reaped unknown pid 110 (exit status 0)
+2025-05-23 09:22:49,496 INFO reaped unknown pid 163 (exit status 0)
+2025-05-23 09:27:34,174 INFO reaped unknown pid 729 (exit status 0)
+2025-05-23 09:28:16,167 INFO reaped unknown pid 1063 (exit status 0)
+2025-05-23 10:04:50,149 INFO reaped unknown pid 1470 (exit status 0)
+2025-05-23 10:21:37,816 INFO reaped unknown pid 1820 (exit status 0)
+2025-05-24 11:53:12,277 WARN received SIGTERM indicating exit request
+2025-05-24 11:53:12,602 INFO waiting for jupyter-notebook, spark-master to die
+2025-05-24 11:53:13,789 WARN stopped: spark-master (terminated by SIGTERM)
+2025-05-24 11:53:16,025 INFO waiting for jupyter-notebook to die
+2025-05-24 11:53:18,418 INFO stopped: jupyter-notebook (exit status 0)
+2025-05-24 12:17:31,473 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-24 12:17:31,512 INFO supervisord started with pid 1
+2025-05-24 12:17:32,546 INFO spawned: 'jupyter-notebook' with pid 13
+2025-05-24 12:17:32,563 INFO spawned: 'spark-master' with pid 14
+2025-05-24 12:17:33,577 INFO success: jupyter-notebook entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-24 12:17:33,580 INFO success: spark-master entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-24 12:23:44,483 INFO reaped unknown pid 123 (exit status 0)
+2025-05-24 12:23:53,551 INFO reaped unknown pid 122 (exit status 0)
+2025-05-24 12:28:59,914 INFO reaped unknown pid 666 (exit status 0)
+2025-05-24 13:12:38,127 WARN received SIGTERM indicating exit request
+2025-05-24 13:12:38,158 INFO waiting for jupyter-notebook, spark-master to die
+2025-05-24 13:12:39,182 WARN stopped: spark-master (terminated by SIGTERM)
+2025-05-24 13:12:40,304 INFO stopped: jupyter-notebook (exit status 0)
+2025-05-24 13:26:25,737 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-24 13:26:25,756 INFO supervisord started with pid 1
+2025-05-24 13:26:26,771 INFO spawned: 'jupyter-notebook' with pid 13
+2025-05-24 13:26:26,778 INFO spawned: 'spark-master' with pid 14
+2025-05-24 13:26:28,652 INFO success: jupyter-notebook entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-24 13:26:28,652 INFO success: spark-master entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-24 13:29:54,806 INFO reaped unknown pid 122 (exit status 0)
+2025-05-24 13:30:02,841 INFO reaped unknown pid 124 (exit status 0)
+2025-05-24 13:35:11,503 INFO reaped unknown pid 646 (exit status 0)
+2025-05-24 13:59:06,041 WARN received SIGTERM indicating exit request
+2025-05-24 13:59:06,124 INFO waiting for jupyter-notebook, spark-master to die
+2025-05-24 13:59:07,184 WARN stopped: spark-master (terminated by SIGTERM)
+2025-05-24 13:59:09,296 INFO waiting for jupyter-notebook to die
+2025-05-24 13:59:12,204 INFO stopped: jupyter-notebook (exit status 0)
+2025-05-24 14:00:21,695 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-24 14:00:21,710 INFO supervisord started with pid 1
+2025-05-24 14:00:22,720 INFO spawned: 'jupyter-notebook' with pid 13
+2025-05-24 14:00:22,724 INFO spawned: 'spark-master' with pid 14
+2025-05-24 14:00:24,534 INFO success: jupyter-notebook entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-24 14:00:24,539 INFO success: spark-master entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-24 18:52:44,939 WARN received SIGTERM indicating exit request
+2025-05-24 18:52:44,996 INFO waiting for jupyter-notebook, spark-master to die
+2025-05-24 18:52:46,026 WARN stopped: spark-master (terminated by SIGTERM)
+2025-05-24 18:52:48,676 INFO waiting for jupyter-notebook to die
+2025-05-24 18:52:51,681 INFO waiting for jupyter-notebook to die
+2025-05-24 18:52:52,757 INFO stopped: jupyter-notebook (exit status 0)
+2025-05-24 18:52:59,655 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-24 18:52:59,667 INFO supervisord started with pid 1
+2025-05-24 18:53:00,677 INFO spawned: 'jupyter-notebook' with pid 13
+2025-05-24 18:53:00,686 INFO spawned: 'spark-master' with pid 14
+2025-05-24 18:53:01,929 INFO success: jupyter-notebook entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-24 18:53:01,929 INFO success: spark-master entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-24 19:22:41,807 WARN received SIGTERM indicating exit request
+2025-05-24 19:22:41,883 INFO waiting for jupyter-notebook, spark-master to die
+2025-05-24 19:22:42,909 WARN stopped: spark-master (terminated by SIGTERM)
+2025-05-24 19:22:45,330 INFO waiting for jupyter-notebook to die
+2025-05-24 19:22:46,975 INFO stopped: jupyter-notebook (exit status 0)
+2025-05-24 19:41:14,970 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-24 19:41:15,049 INFO supervisord started with pid 1
+2025-05-24 19:41:16,057 INFO spawned: 'jupyter-notebook' with pid 12
+2025-05-24 19:41:16,071 INFO spawned: 'spark-master' with pid 13
+2025-05-24 19:41:17,077 INFO success: jupyter-notebook entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-24 19:41:17,083 INFO success: spark-master entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-24 20:31:42,486 INFO reaped unknown pid 133 (exit status 0)
+2025-05-24 20:31:48,525 INFO reaped unknown pid 134 (exit status 0)
+2025-05-24 20:36:49,659 WARN received SIGTERM indicating exit request
+2025-05-24 20:36:49,801 INFO waiting for jupyter-notebook, spark-master to die
+2025-05-24 20:36:50,821 WARN stopped: spark-master (terminated by SIGTERM)
+2025-05-24 20:36:53,622 INFO waiting for jupyter-notebook to die
+2025-05-24 20:36:56,553 INFO stopped: jupyter-notebook (exit status 0)
+2025-05-24 21:14:06,000 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-24 21:14:06,038 INFO supervisord started with pid 1
+2025-05-24 21:14:07,256 INFO spawned: 'jupyter-notebook' with pid 13
+2025-05-24 21:14:07,298 INFO spawned: 'spark-master' with pid 14
+2025-05-24 21:14:08,508 INFO success: jupyter-notebook entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-24 21:14:08,522 INFO success: spark-master entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-24 21:56:53,807 INFO reaped unknown pid 122 (exit status 0)
+2025-05-24 21:56:59,842 INFO reaped unknown pid 123 (exit status 0)
+2025-05-24 22:02:11,373 INFO reaped unknown pid 655 (exit status 0)
+2025-05-25 11:17:01,380 INFO reaped unknown pid 991 (exit status 0)
+2025-05-25 11:18:49,643 INFO reaped unknown pid 1160 (exit status 0)
+2025-05-25 11:22:29,598 INFO reaped unknown pid 1520 (exit status 0)
+2025-05-25 11:36:03,852 INFO reaped unknown pid 1852 (exit status 0)
+2025-05-25 11:53:05,012 INFO reaped unknown pid 2156 (exit status 0)
+2025-05-25 15:03:19,215 WARN received SIGTERM indicating exit request
+2025-05-25 15:03:19,311 INFO waiting for jupyter-notebook, spark-master to die
+2025-05-25 15:03:20,375 WARN stopped: spark-master (terminated by SIGTERM)
+2025-05-25 15:03:22,913 INFO waiting for jupyter-notebook to die
+2025-05-25 15:03:25,689 INFO stopped: jupyter-notebook (exit status 0)

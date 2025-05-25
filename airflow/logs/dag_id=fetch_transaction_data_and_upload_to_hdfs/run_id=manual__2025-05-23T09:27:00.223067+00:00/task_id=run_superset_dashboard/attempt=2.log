@@ -1,0 +1,72 @@
+[2025-05-23T09:35:07.840+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_superset_dashboard manual__2025-05-23T09:27:00.223067+00:00 [queued]>
+[2025-05-23T09:35:07.849+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_superset_dashboard manual__2025-05-23T09:27:00.223067+00:00 [queued]>
+[2025-05-23T09:35:07.850+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2025-05-23T09:35:07.865+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): run_superset_dashboard> on 2025-05-23 09:27:00.223067+00:00
+[2025-05-23T09:35:07.874+0000] {standard_task_runner.py:57} INFO - Started process 885 to run task
+[2025-05-23T09:35:07.877+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'run_superset_dashboard', 'manual__2025-05-23T09:27:00.223067+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/ETL.py', '--cfg-path', '/tmp/tmp873un3an']
+[2025-05-23T09:35:07.880+0000] {standard_task_runner.py:85} INFO - Job 25: Subtask run_superset_dashboard
+[2025-05-23T09:35:07.934+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_superset_dashboard manual__2025-05-23T09:27:00.223067+00:00 [running]> on host 6c702459c558
+[2025-05-23T09:35:08.176+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='run_superset_dashboard' AIRFLOW_CTX_EXECUTION_DATE='2025-05-23T09:27:00.223067+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-23T09:27:00.223067+00:00'
+[2025-05-23T09:35:08.177+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-05-23T09:35:08.184+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'docker exec superset python /app/dashboard/step1_connection_db.py && docker exec superset python /app/dashboard/step2_creation_of_datasets.py && docker exec superset python /app/dashboard/step3_create_charts.py && docker exec superset python step4_create_dashbord.py']
+[2025-05-23T09:35:08.197+0000] {subprocess.py:86} INFO - Output:
+[2025-05-23T09:35:08.612+0000] {subprocess.py:93} INFO - ✅ Login successful.
+[2025-05-23T09:35:08.612+0000] {subprocess.py:93} INFO - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6dHJ1ZSwiaWF0IjoxNzQ3OTkyOTA4LCJqdGkiOiI2OTU3MGU0My1lYWQ5LTQ2MjgtOWMwOC01OGE5YmVlZGUxOWYiLCJ0eXBlIjoiYWNjZXNzIiwic3ViIjoxLCJuYmYiOjE3NDc5OTI5MDgsImNzcmYiOiJhYmI0NjIzYy01YmVlLTQ0Y2QtYmNjMS0wYWE4MTgxMmUyOWQiLCJleHAiOjE3NDc5OTM4MDh9.XAfAAhpS3TojpYxo8FzWaPmrd5gvDjQ8Hmfnvl31DF0
+[2025-05-23T09:35:08.613+0000] {subprocess.py:93} INFO - ✅ CSRF token received:
+[2025-05-23T09:35:08.613+0000] {subprocess.py:93} INFO - IjdjOGVjMGRlODUxZWQ2NjlhMWQ2ZDFkZmRmOTEwMWFjM2RhYTcyM2Qi.aDBBTA.OZD4unzw2KxqVhYpC9t8QOsYbwE
+[2025-05-23T09:35:08.613+0000] {subprocess.py:93} INFO - Status: 422
+[2025-05-23T09:35:08.613+0000] {subprocess.py:93} INFO - Response: {"message":{"database_name":"A database with the same name already exists."}}
+[2025-05-23T09:35:08.614+0000] {subprocess.py:93} INFO - 
+[2025-05-23T09:35:09.318+0000] {subprocess.py:93} INFO - ✅ Logged in successfully
+[2025-05-23T09:35:09.319+0000] {subprocess.py:93} INFO - ✅ CSRF token retrieved
+[2025-05-23T09:35:09.319+0000] {subprocess.py:93} INFO - ✅ Hive Warehouse database ID: 1
+[2025-05-23T09:35:09.319+0000] {subprocess.py:93} INFO - ❌ Failed to create dataset: {"message":{"table":["Dataset default.default.Distribution%20of%20Payment%20Methods already exists"]}}
+[2025-05-23T09:35:09.320+0000] {subprocess.py:93} INFO - 
+[2025-05-23T09:35:09.320+0000] {subprocess.py:93} INFO - Status: 422
+[2025-05-23T09:35:09.321+0000] {subprocess.py:93} INFO - ❌ Failed to create dataset: {"message":{"table":["Dataset default.default.Transaction%20Volume%20by%20Device%20Type already exists"]}}
+[2025-05-23T09:35:09.321+0000] {subprocess.py:93} INFO - 
+[2025-05-23T09:35:09.322+0000] {subprocess.py:93} INFO - Status: 422
+[2025-05-23T09:35:09.322+0000] {subprocess.py:93} INFO - ❌ Failed to create dataset: {"message":{"table":["Dataset default.default.Average%20Transaction%20Amount%20by%20Customer%20Age%20Group already exists"]}}
+[2025-05-23T09:35:09.323+0000] {subprocess.py:93} INFO - 
+[2025-05-23T09:35:09.323+0000] {subprocess.py:93} INFO - Status: 422
+[2025-05-23T09:35:09.323+0000] {subprocess.py:93} INFO - ❌ Failed to create dataset: {"message":{"table":["Dataset default.default.Number%20of%20Transactions%20by%20Month already exists"]}}
+[2025-05-23T09:35:09.323+0000] {subprocess.py:93} INFO - 
+[2025-05-23T09:35:09.324+0000] {subprocess.py:93} INFO - Status: 422
+[2025-05-23T09:35:09.324+0000] {subprocess.py:93} INFO - ❌ Failed to create dataset: {"message":{"table":["Dataset default.default.Proportion%20of%20Fraudulent%20Transactions already exists"]}}
+[2025-05-23T09:35:09.324+0000] {subprocess.py:93} INFO - 
+[2025-05-23T09:35:09.324+0000] {subprocess.py:93} INFO - Status: 422
+[2025-05-23T09:35:09.325+0000] {subprocess.py:93} INFO - ❌ Failed to create dataset: {"message":{"table":["Dataset default.default.Total%20Transaction%20Amount%20by%20Product%20Category already exists"]}}
+[2025-05-23T09:35:09.325+0000] {subprocess.py:93} INFO - 
+[2025-05-23T09:35:09.325+0000] {subprocess.py:93} INFO - Status: 422
+[2025-05-23T09:35:16.475+0000] {subprocess.py:93} INFO - 🔐 Authenticating with Superset...
+[2025-05-23T09:35:16.477+0000] {subprocess.py:93} INFO - ✅ Authentication successful
+[2025-05-23T09:35:16.478+0000] {subprocess.py:93} INFO - 
+[2025-05-23T09:35:16.480+0000] {subprocess.py:93} INFO - 🚀 Starting dashboard creation process...
+[2025-05-23T09:35:16.481+0000] {subprocess.py:93} INFO - 📊 Charts to create: 6
+[2025-05-23T09:35:16.482+0000] {subprocess.py:93} INFO - 🏗️ Dashboard name: Transaction Analytics Dashboard
+[2025-05-23T09:35:16.482+0000] {subprocess.py:93} INFO - ==================================================
+[2025-05-23T09:35:16.483+0000] {subprocess.py:93} INFO - 📊 Creating chart: Fraud Detection Overview
+[2025-05-23T09:35:16.484+0000] {subprocess.py:93} INFO - ✅ Chart 'Fraud Detection Overview' created (ID: 16)
+[2025-05-23T09:35:16.484+0000] {subprocess.py:93} INFO - 📊 Creating chart: Number of Transactions by Month
+[2025-05-23T09:35:16.484+0000] {subprocess.py:93} INFO - ✅ Chart 'Number of Transactions by Month' created (ID: 19)
+[2025-05-23T09:35:16.485+0000] {subprocess.py:93} INFO - 📊 Creating chart: Average Transaction Amount by Age Group
+[2025-05-23T09:35:16.485+0000] {subprocess.py:93} INFO - ✅ Chart 'Average Transaction Amount by Age Group' created (ID: 21)
+[2025-05-23T09:35:16.485+0000] {subprocess.py:93} INFO - 📊 Creating chart: Distribution of Payment Methods
+[2025-05-23T09:35:16.485+0000] {subprocess.py:93} INFO - ✅ Chart 'Distribution of Payment Methods' created (ID: 22)
+[2025-05-23T09:35:16.485+0000] {subprocess.py:93} INFO - 📊 Creating chart: Transaction Volume by Device Type
+[2025-05-23T09:35:16.486+0000] {subprocess.py:93} INFO - ✅ Chart 'Transaction Volume by Device Type' created (ID: 24)
+[2025-05-23T09:35:16.486+0000] {subprocess.py:93} INFO - 📊 Creating chart: Revenue by Product Category
+[2025-05-23T09:35:16.486+0000] {subprocess.py:93} INFO - ✅ Chart 'Revenue by Product Category' created (ID: 26)
+[2025-05-23T09:35:16.486+0000] {subprocess.py:93} INFO - 
+[2025-05-23T09:35:16.487+0000] {subprocess.py:93} INFO - 📈 Successfully created 6 out of 6 charts
+[2025-05-23T09:35:16.587+0000] {subprocess.py:93} INFO - python: can't open file '/app/step4_create_dashbord.py': [Errno 2] No such file or directory
+[2025-05-23T09:35:16.600+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2025-05-23T09:35:16.610+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2025-05-23T09:35:16.614+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=run_superset_dashboard, execution_date=20250523T092700, start_date=20250523T093507, end_date=20250523T093516
+[2025-05-23T09:35:16.631+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 25 for task run_superset_dashboard (Bash command failed. The command returned a non-zero exit code 2.; 885)
+[2025-05-23T09:35:16.676+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-05-23T09:35:16.700+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

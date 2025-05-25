@@ -1,0 +1,7 @@
+mappings:
+- match: "airflow.*"
+  name: "airflow_$1"
+  labels:
+    service: "airflow"
+- match: "*"
+  name: "statsd_$1" 

@@ -1,0 +1,52 @@
+// Star Schema for Fraud Detection System
+// Fact Table
+Table fact_transactions {
+  Transaction_ID varchar [primary key]
+  Customer_ID varchar
+  Transaction_Amount float
+  Quantity integer
+  Is_Fraudulent boolean
+  Transaction_Timestamp timestamp
+  Payment_Method_ID varchar
+  Product_Category_ID varchar
+  Device_ID varchar
+}
+
+// Dimension Tables
+Table dim_customers {
+  Customer_ID varchar [primary key]
+  Customer_Age integer
+  Customer_Location varchar
+  Account_Age_Days integer
+  Age_Group varchar
+}
+
+Table dim_payment_methods {
+  Payment_Method_ID integer [primary key]
+  Payment_Method varchar
+}
+
+Table dim_product_categories {
+  Product_Category_ID integer [primary key]
+  Product_Category varchar
+}
+
+Table dim_devices {
+  Device_ID integer [primary key]
+  Device_Type varchar
+}
+
+Table dim_time {
+  Time_ID timestamp [primary key]
+  Transaction_Hour integer
+  Transaction_DayOfWeek integer
+  Transaction_Month integer
+  Transaction_Year integer
+}
+
+// Relationships (Foreign Keys)
+Ref: fact_transactions.Customer_ID > dim_customers.Customer_ID
+Ref: fact_transactions.Payment_Method_ID > dim_payment_methods.Payment_Method_ID
+Ref: fact_transactions.Product_Category_ID > dim_product_categories.Product_Category_ID
+Ref: fact_transactions.Device_ID > dim_devices.Device_ID
+Ref: fact_transactions.Transaction_Timestamp > dim_time.Time_ID

@@ -1,0 +1,154 @@
+[2025-04-19T14:06:18.582+0000] {processor.py:157} INFO - Started process (PID=167) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:06:18.586+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:06:18.588+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:06:18.587+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:06:18.672+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:06:18.741+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:06:18.740+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:06:18.829+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:06:18.829+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:06:18.873+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.310 seconds
+[2025-04-19T14:06:49.571+0000] {processor.py:157} INFO - Started process (PID=175) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:06:49.572+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:06:49.574+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:06:49.573+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:06:49.622+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:06:49.663+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:06:49.662+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:06:49.688+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:06:49.688+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:06:49.712+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.144 seconds
+[2025-04-19T14:07:20.520+0000] {processor.py:157} INFO - Started process (PID=186) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:07:20.521+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:07:20.522+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:07:20.522+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:07:20.543+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:07:20.576+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:07:20.575+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:07:20.599+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:07:20.599+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:07:20.623+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.107 seconds
+[2025-04-19T14:07:51.004+0000] {processor.py:157} INFO - Started process (PID=197) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:07:51.006+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:07:51.008+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:07:51.007+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:07:51.067+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:07:51.103+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:07:51.103+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:07:51.132+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:07:51.132+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:07:51.161+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.162 seconds
+[2025-04-19T14:08:21.489+0000] {processor.py:157} INFO - Started process (PID=208) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:08:21.495+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:08:21.499+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:08:21.497+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:08:21.555+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:08:21.591+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:08:21.591+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:08:21.616+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:08:21.616+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:08:21.639+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.156 seconds
+[2025-04-19T14:08:51.893+0000] {processor.py:157} INFO - Started process (PID=219) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:08:51.895+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:08:51.896+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:08:51.896+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:08:51.938+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:08:51.973+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:08:51.972+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:08:51.997+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:08:51.997+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:08:52.016+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.126 seconds
+[2025-04-19T14:09:22.292+0000] {processor.py:157} INFO - Started process (PID=230) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:09:22.293+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:09:22.295+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:09:22.295+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:09:22.347+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:09:22.404+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:09:22.404+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:09:22.450+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:09:22.449+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:09:22.670+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.383 seconds
+[2025-04-19T14:09:52.996+0000] {processor.py:157} INFO - Started process (PID=241) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:09:52.998+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:09:53.006+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:09:53.005+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:09:53.034+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:09:53.087+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:09:53.086+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:09:53.539+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:09:53.539+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:09:53.579+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.588 seconds
+[2025-04-19T14:10:23.841+0000] {processor.py:157} INFO - Started process (PID=252) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:10:23.843+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:10:23.846+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:10:23.845+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:10:23.892+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:10:23.921+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:10:23.921+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:10:24.096+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:10:24.096+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:10:24.119+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.286 seconds
+[2025-04-19T14:10:54.895+0000] {processor.py:157} INFO - Started process (PID=263) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:10:54.896+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:10:54.897+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:10:54.897+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:10:54.949+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:10:55.099+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:10:55.099+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:10:55.122+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:10:55.122+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:10:55.145+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.254 seconds
+[2025-04-19T14:11:25.270+0000] {processor.py:157} INFO - Started process (PID=274) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:11:25.272+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:11:25.274+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:11:25.274+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:11:25.318+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:11:25.353+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:11:25.353+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:11:25.380+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:11:25.379+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:11:25.405+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.140 seconds
+[2025-04-19T14:11:55.498+0000] {processor.py:157} INFO - Started process (PID=285) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:11:55.499+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:11:55.501+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:11:55.500+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:11:55.528+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:11:55.573+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:11:55.572+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:11:55.598+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:11:55.598+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:11:55.622+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.137 seconds
+[2025-04-19T14:12:26.427+0000] {processor.py:157} INFO - Started process (PID=296) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:12:26.428+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:12:26.429+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:12:26.429+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:12:26.448+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:12:26.481+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:12:26.481+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:12:26.503+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:12:26.503+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:12:26.530+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.107 seconds
+[2025-04-19T14:12:56.638+0000] {processor.py:157} INFO - Started process (PID=307) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:12:56.640+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:12:56.641+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:12:56.640+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:12:56.661+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:12:56.690+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:12:56.690+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:12:56.712+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:12:56.712+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:12:56.730+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.095 seconds
+[2025-04-19T14:13:26.803+0000] {processor.py:157} INFO - Started process (PID=318) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:13:26.804+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:13:26.805+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:13:26.805+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:13:26.825+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:13:26.851+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:13:26.851+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:13:26.872+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:13:26.872+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:13:26.891+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.091 seconds
+[2025-04-19T14:13:57.088+0000] {processor.py:157} INFO - Started process (PID=329) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:13:57.089+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:13:57.090+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:13:57.090+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:13:57.122+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:13:57.156+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:13:57.155+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:13:57.178+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:13:57.178+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:13:57.212+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.128 seconds
+[2025-04-19T14:14:27.422+0000] {processor.py:157} INFO - Started process (PID=340) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:14:27.423+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:14:27.425+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:14:27.425+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:14:27.465+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:14:27.512+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:14:27.511+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:14:27.544+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:14:27.543+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:14:27.580+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.161 seconds
+[2025-04-19T14:14:58.140+0000] {processor.py:157} INFO - Started process (PID=351) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:14:58.142+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:14:58.144+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:14:58.143+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:14:58.173+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:14:58.206+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:14:58.206+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:14:58.234+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:14:58.233+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:14:58.266+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.130 seconds
+[2025-04-19T14:15:28.749+0000] {processor.py:157} INFO - Started process (PID=362) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:15:28.750+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:15:28.752+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:15:28.751+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:15:28.787+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:15:28.831+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:15:28.830+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:15:28.879+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:15:28.878+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:15:28.933+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.187 seconds
+[2025-04-19T14:15:59.027+0000] {processor.py:157} INFO - Started process (PID=373) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:15:59.029+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:15:59.031+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:15:59.031+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:15:59.068+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:15:59.106+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:15:59.105+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:15:59.130+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:15:59.130+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:15:59.154+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.131 seconds
+[2025-04-19T14:16:29.443+0000] {processor.py:157} INFO - Started process (PID=384) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:16:29.445+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:16:29.447+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:16:29.446+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:16:29.479+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:16:29.515+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:16:29.514+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:16:29.551+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:16:29.551+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:16:29.589+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.151 seconds
+[2025-04-19T14:16:59.736+0000] {processor.py:157} INFO - Started process (PID=395) to work on /opt/airflow/dags/transformation.py
+[2025-04-19T14:16:59.737+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/transformation.py for tasks to queue
+[2025-04-19T14:16:59.739+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:16:59.739+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/transformation.py
+[2025-04-19T14:16:59.778+0000] {processor.py:839} INFO - DAG(s) dict_keys(['spark_transaction_processing']) retrieved from /opt/airflow/dags/transformation.py
+[2025-04-19T14:16:59.816+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:16:59.816+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-19T14:16:59.844+0000] {logging_mixin.py:151} INFO - [2025-04-19T14:16:59.843+0000] {dag.py:3677} INFO - Setting next_dagrun for spark_transaction_processing to 2025-04-18T00:00:00+00:00, run_after=2025-04-19T00:00:00+00:00
+[2025-04-19T14:16:59.869+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/transformation.py took 0.136 seconds

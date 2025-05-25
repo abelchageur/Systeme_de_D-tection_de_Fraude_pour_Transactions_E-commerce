@@ -1,0 +1,13 @@
+[2025-05-19T13:49:37.376+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.upload_to_hdfs scheduled__2025-05-18T00:00:00+00:00 [queued]>
+[2025-05-19T13:49:37.386+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.upload_to_hdfs scheduled__2025-05-18T00:00:00+00:00 [queued]>
+[2025-05-19T13:49:37.387+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-05-19T13:49:37.401+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): upload_to_hdfs> on 2025-05-18 00:00:00+00:00
+[2025-05-19T13:49:37.408+0000] {standard_task_runner.py:57} INFO - Started process 1034 to run task
+[2025-05-19T13:49:37.413+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'upload_to_hdfs', 'scheduled__2025-05-18T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/ETL.py', '--cfg-path', '/tmp/tmpdwnv668p']
+[2025-05-19T13:49:37.418+0000] {standard_task_runner.py:85} INFO - Job 4: Subtask upload_to_hdfs
+[2025-05-19T13:49:37.473+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.upload_to_hdfs scheduled__2025-05-18T00:00:00+00:00 [running]> on host 10b15101584c
+[2025-05-19T13:49:37.734+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='upload_to_hdfs' AIRFLOW_CTX_EXECUTION_DATE='2025-05-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-05-18T00:00:00+00:00'
+[2025-05-19T13:49:42.337+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-05-19T13:49:42.354+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=upload_to_hdfs, execution_date=20250518T000000, start_date=20250519T134937, end_date=20250519T134942
+[2025-05-19T13:49:42.400+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-05-19T13:49:42.425+0000] {taskinstance.py:2784} INFO - 2 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,469 @@
+version: '3.8'
+
+services:
+
+##############################(------------------------)####################################### 
+##############################|-|    batch partie    |-|#######################################
+##############################(------------------------)####################################### 
+
+  # Existing services omitted for brevity...
+  # api for batch
+  fastapi:
+    build: ./fastapi
+    ports:
+      - "8000:8000"
+    container_name: fastapi
+    volumes:
+      - ./data:/app/data
+    networks:
+      - batch-network
+    deploy:
+      resources:
+        limits:
+          memory: 2G 
+    
+  postgres:
+    image: postgres:13
+    container_name: postgres
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres_db_volume:/var/lib/postgresql/data
+    networks:
+      - batch-network
+
+  airflow-init:
+    image: apache/airflow:2.7.1
+    container_name: airflow-init
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+    entrypoint: bash -c "airflow db init && airflow users create --username admin --password admin --firstname Admin --lastname User --email admin@example.com --role Admin"
+    networks:
+      - batch-network
+  
+  airflow-webserver:
+    build:
+      context: ./airflow/webserver
+      dockerfile: Dockerfile
+    container_name: airflow-webserver
+    restart: always
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__API__AUTH_BACKENDS=airflow.api.auth.backend.basic_auth
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+      - airflow-init
+      - statsd-exporter
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./airflow/airflow.cfg:/opt/airflow/airflow.cfg
+    command: webserver
+    networks:
+      - batch-network
+
+  airflow-scheduler:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    container_name: airflow-scheduler
+    restart: always
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./airflow/airflow.cfg:/opt/airflow/airflow.cfg
+
+    command: scheduler
+    depends_on:
+      - postgres
+      - statsd-exporter
+    networks:
+      - batch-network
+
+  hadoop-namenode:
+    build:
+      context: ./hadoop
+      dockerfile: Dockerfile
+    container_name: namenode
+    environment:
+      - CLUSTER_NAME=test-cluster
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+      - HDFS_CONF_dfs_namenode_name_dir=file:///hadoop/dfs/name
+    ports:
+      - "9870:9870"
+      - "50070:50070"
+    volumes:
+      - ./hadoop/namenode_data:/hadoop/dfs/name
+      - ./hadoop/home:/home
+      - ./hadoop/apt:/etc/apt
+      - ./hadoop/hadoop_config:/etc/hadoop/conf
+    networks:
+      - batch-network
+
+  hadoop-datanode:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode
+    environment:
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+      - HDFS_CONF_dfs_datanode_data_dir=file:///hadoop/dfs/data
+    ports:
+      - "9864:9864"
+    volumes:
+      - ./hadoop/datanode_data:/hadoop/dfs/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - batch-network
+    depends_on:
+      - hadoop-namenode
+
+  spark-master:
+    build:
+      context: ./spark
+      dockerfile: Dockerfile
+    container_name: spark-master
+    ports:
+      - '7077:7077'  # Spark communication port
+      - '8081:8080'  # Spark master web UI
+      - '8888:8888'
+    environment:
+      - SPARK_MODE=master
+    volumes:
+      - ./spark:/opt/spark/work-dir
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - batch-network
+
+  hive:
+    build:
+      context: ./hive
+      dockerfile: Dockerfile
+    container_name: hive
+    ports:
+      - "10000:10000"  # Thrift server port
+      - "9083:9083"    # Hive Metastore port
+    environment:
+      HIVE_METASTORE_URI: thrift://hive:9083
+      HADOOP_CONF_DIR: /etc/hadoop/conf
+      CORE_CONF_fs_defaultFS: hdfs://namenode:9000
+    networks:
+      - batch-network
+    depends_on:
+      - postgres
+      - hadoop-namenode
+    volumes:
+      - hive-data:/opt/hive
+      - ./hive/hive_config:/opt/hive/conf  # Make sure hive-site.xml is here
+      - ./hive/home:/home
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "9083"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  superset:
+    build:
+      context: ./superset
+      dockerfile: Dockerfile
+    container_name: superset
+    ports:
+      - "8088:8088"
+    environment:
+      - SUPERSET_SECRET_KEY=Mohame@@@@d2002
+      - SQLALCHEMY_DATABASE_URI=postgresql+psycopg2://airflow:airflow@postgres:5432/superset
+      - FLASK_LIMITER_STORAGE_URI=redis://redis:6379/0
+      - SUPERSET_CONFIG_PATH=/app/pythonpath/superset_config.py
+    volumes:
+      - ./superset/superset_config.py:/app/pythonpath/superset_config.py
+      - superset_data:/app/superset_home
+      - ./superset/dashboard:/app/dashboard
+    depends_on:
+      - postgres
+      - hive
+      - redis
+    restart: unless-stopped
+    networks:
+      - batch-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8088/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  init-hive:
+    image: docker:20.10
+    container_name: init-superset-hive
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - batch-network
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        sleep 10
+        docker exec superset superset db upgrade
+        docker exec superset superset fab create-admin --username admin --firstname Superset --lastname Admin --email admin@superset.com --password admin
+        docker exec superset superset init
+        sleep 10
+        docker cp hive:/opt/tez /tmp/tez
+        docker cp /tmp/tez namenode:/opt/
+        sleep 90
+        exit 0
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+
+
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - batch-network
+##############################(------------------------)####################################### 
+##############################|-|  streaming partie  |-|#######################################
+##############################(------------------------)####################################### 
+
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: api
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./api:/app
+      - ./data:/app/data
+    depends_on:
+      - kafka
+    networks:
+      - batch-network
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+
+  fraud_detector:
+    build:
+      context: ./consomer
+      dockerfile: Dockerfile
+    container_name: fraud_detector
+    depends_on:
+      kafka:
+        condition: service_healthy
+      hadoop-namenode:
+        condition: service_healthy
+    networks:
+      - batch-network
+    environment:
+      - HDFS_NAMENODE_URL=http://namenode:9870  # Changed port from 50070 to 9870 for HDFS 3.x
+      - MAX_RETRIES=5  # Increased retries
+      - RETRY_DELAY=5  # Longer delay between retries in seconds
+    volumes:
+      - ./data:/app/data  # For fallback model storage
+    restart: on-failure 
+
+  streamlit:
+    build:
+      context: ./streamlit
+      dockerfile: Dockerfile
+    container_name: streamlit
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./streamlit/app:/app
+    environment:
+      - CASSANDRA_HOST=cassandra
+      - CASSANDRA_PORT=9042
+      - CASSANDRA_KEYSPACE=fintech
+    depends_on:
+      - kafka
+      - fraud_detector
+    networks:
+      - batch-network
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    hostname: zookeeper
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    volumes:
+      - zookeeper-data:/var/lib/zookeeper/data
+    networks:
+      - batch-network
+
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    hostname: kafka
+    container_name: kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+    volumes:
+      - kafka-data:/var/lib/kafka/data
+      - ./kafka/config:/etc/kafka/
+    networks:
+      - batch-network
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+
+  streaming-init:
+    image: docker:20.10
+    container_name: streaming-init
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - batch-network
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        sleep 90
+        docker container restart api
+        sleep 5
+        docker exec -it kafka kafka-topics --create --topic transaction_topic --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1 --config retention.ms=180000
+        docker exec -it kafka kafka-topics --create --topic fraud_topic --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1 --config retention.ms=180000
+        docker exec api curl -X POST http://api:8001/ingest_csv/ 
+        sleep 2
+        docker container restart fraud_detector 
+        sleep 10
+        docker container restart streamlit
+        sleep 7
+        docker exec fraud_detector python /app/cassandra_consumer.py
+        exit 0
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+
+  cassandra:
+      image: cassandra:4.1
+      container_name: cassandra
+      environment:
+        CASSANDRA_CLUSTER_NAME: 'fintech-cluster'
+        CASSANDRA_DC: DC1
+        CASSANDRA_RACK: RAC1
+        CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
+      ports:
+        - "9042:9042"
+      volumes:
+        - cassandra_data:/var/lib/cassandra
+        - ./cassandra-setup.cql:/docker-entrypoint-initdb.d/cassandra-setup.cql
+      healthcheck:
+        test: ["CMD", "cqlsh", "-f", "/docker-entrypoint-initdb.d/cassandra-setup.cql"]
+        interval: 1s
+        timeout: 1s
+        retries: 3
+      networks:
+        - batch-network
+
+##############################(------------------------)####################################### 
+##############################|-|  monitoring partie |-|#######################################
+##############################(------------------------)####################################### 
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+      - "7771:9090"
+    volumes:
+      - ./grafana/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    networks:
+      - batch-network
+  
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "7772:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+    depends_on:
+      - prometheus
+    networks:
+      - batch-network
+  
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor
+    container_name: cadvisor
+    ports:
+      - "7773:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    networks:
+      - batch-network
+
+  statsd-exporter:
+    image: prom/statsd-exporter
+    container_name: statsd-exporter
+    ports:
+      - "9102:9102"
+      - "9125:9125/udp"
+    command:
+      - --statsd.mapping-config=/etc/statsd/mapping.yml
+    volumes:
+      - ./statsd-mapping.yml:/etc/statsd/mapping.yml
+    networks:
+      - batch-network
+
+
+##############################(------------------------)####################################### 
+##############################|-|Networks and volumes|-|#######################################
+##############################(------------------------)####################################### 
+
+networks:
+  batch-network:
+    driver: bridge
+
+volumes:
+  redis_data:
+  postgres_db_volume:
+  hive-data:
+  zookeeper-data:
+  kafka-data:
+  hdfs_namenode:
+  superset_data:
+  hdfs_datanode:
+  cassandra_data:
+  grafana-storage:

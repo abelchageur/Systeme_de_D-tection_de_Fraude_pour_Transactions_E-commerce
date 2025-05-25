@@ -1,0 +1,26 @@
+[2025-05-09T18:47:40.284+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_hive_command manual__2025-05-09T18:46:47.671733+00:00 [queued]>
+[2025-05-09T18:47:40.299+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_hive_command manual__2025-05-09T18:46:47.671733+00:00 [queued]>
+[2025-05-09T18:47:40.300+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-05-09T18:47:40.318+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): run_hive_command> on 2025-05-09 18:46:47.671733+00:00
+[2025-05-09T18:47:40.326+0000] {standard_task_runner.py:57} INFO - Started process 6833 to run task
+[2025-05-09T18:47:40.330+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'run_hive_command', 'manual__2025-05-09T18:46:47.671733+00:00', '--job-id', '124', '--raw', '--subdir', 'DAGS_FOLDER/ingestion.py', '--cfg-path', '/tmp/tmpz7nkquc8']
+[2025-05-09T18:47:40.333+0000] {standard_task_runner.py:85} INFO - Job 124: Subtask run_hive_command
+[2025-05-09T18:47:40.392+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_hive_command manual__2025-05-09T18:46:47.671733+00:00 [running]> on host d4afc872a8aa
+[2025-05-09T18:47:40.493+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='run_hive_command' AIRFLOW_CTX_EXECUTION_DATE='2025-05-09T18:46:47.671733+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-09T18:46:47.671733+00:00'
+[2025-05-09T18:47:40.497+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-05-09T18:47:40.499+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            set -e  # Exit immediately on any error\n\n            # 1. Create metastore_db only if it doesn\'t exist\n            docker exec striming_processing-postgres-1 psql -U *** -d *** -tc "SELECT 1 FROM pg_database WHERE datname = \'metastore_db\'" | grep -q 1 || \\\n            docker exec striming_processing-postgres-1 psql -U *** -d *** -c "CREATE DATABASE metastore_db;" && \\\n\n            # 2. Check if Hive metastore schema is already initialized\n            echo "Checking if Hive metastore schema is already initialized..."\n            docker exec hive hive --service schematool -dbType postgres -info > /tmp/hive_schema_info.txt 2>&1 || true\n\n            if grep -q "Metastore schema version:" /tmp/hive_schema_info.txt; then\n                echo "Schema already initialized."\n            else\n                echo "Initializing Hive metastore schema..."\n                docker exec hive hive --service schematool -dbType postgres -initSchema\n            fi && \\\n\n            # 3. Run Hive script\n            docker exec hive hive -f /home/query.hql\n        ']
+[2025-05-09T18:47:40.517+0000] {subprocess.py:86} INFO - Output:
+[2025-05-09T18:47:40.646+0000] {subprocess.py:93} INFO - Checking if Hive metastore schema is already initialized...
+[2025-05-09T18:47:40.757+0000] {subprocess.py:93} INFO - Initializing Hive metastore schema...
+[2025-05-09T18:47:40.847+0000] {subprocess.py:93} INFO - Service schematool not found
+[2025-05-09T18:47:40.848+0000] {subprocess.py:93} INFO - Available Services: beeline cleardanglingscratchdir cli hbaseimport hbaseschematool help hiveburninclient hiveserver2 hplsql jar lineage llap llapdump llapstatus metastore metatool orcfiledump rcfilecat schemaTool version
+[2025-05-09T18:47:40.855+0000] {subprocess.py:97} INFO - Command exited with return code 7
+[2025-05-09T18:47:40.867+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 7.
+[2025-05-09T18:47:40.872+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=run_hive_command, execution_date=20250509T184647, start_date=20250509T184740, end_date=20250509T184740
+[2025-05-09T18:47:40.890+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 124 for task run_hive_command (Bash command failed. The command returned a non-zero exit code 7.; 6833)
+[2025-05-09T18:47:40.907+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-05-09T18:47:40.938+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

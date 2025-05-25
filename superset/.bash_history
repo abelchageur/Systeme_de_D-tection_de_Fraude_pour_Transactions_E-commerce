@@ -1,0 +1,3 @@
+ db upgrade
+eit
+exit

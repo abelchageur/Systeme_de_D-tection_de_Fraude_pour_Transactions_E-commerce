@@ -1,0 +1,1 @@
+{"metrics":{"pr_auc":0.3316535462352264,"recall":0.6214497668503604,"precision":0.9391923255076197,"training_time_seconds":1362.5114841461182,"f1":0.7280039395581962,"auc":0.7620169570314053},"model_name":"Gradient-Boosted Trees","training_date":"2025-05-08"}

@@ -1,0 +1,19 @@
+[2025-05-24T13:35:12.935+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.update_hql_file manual__2025-05-24T13:28:40.655570+00:00 [queued]>
+[2025-05-24T13:35:12.944+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.update_hql_file manual__2025-05-24T13:28:40.655570+00:00 [queued]>
+[2025-05-24T13:35:12.946+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-05-24T13:35:12.960+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): update_hql_file> on 2025-05-24 13:28:40.655570+00:00
+[2025-05-24T13:35:12.967+0000] {standard_task_runner.py:57} INFO - Started process 475 to run task
+[2025-05-24T13:35:12.970+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'update_hql_file', 'manual__2025-05-24T13:28:40.655570+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/ETL.py', '--cfg-path', '/tmp/tmpk3bkyqq1']
+[2025-05-24T13:35:12.973+0000] {standard_task_runner.py:85} INFO - Job 14: Subtask update_hql_file
+[2025-05-24T13:35:13.021+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.update_hql_file manual__2025-05-24T13:28:40.655570+00:00 [running]> on host 1be44660cb93
+[2025-05-24T13:35:13.229+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='update_hql_file' AIRFLOW_CTX_EXECUTION_DATE='2025-05-24T13:28:40.655570+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-24T13:28:40.655570+00:00'
+[2025-05-24T13:35:13.231+0000] {logging_mixin.py:151} INFO - Attempting to delete existing file: /home/query.hql inside container 'hive'
+[2025-05-24T13:35:13.308+0000] {logging_mixin.py:151} INFO - Successfully deleted old HQL file.
+[2025-05-24T13:35:13.309+0000] {logging_mixin.py:151} INFO - Date placeholder replaced with: YYYY=2025/MM=05/DD=24
+[2025-05-24T13:35:13.310+0000] {logging_mixin.py:151} INFO - New HQL file generated at: /tmp/query.hql
+[2025-05-24T13:35:13.310+0000] {logging_mixin.py:151} INFO - Copying file into container 'hive:/home/query.hql'
+[2025-05-24T13:35:13.364+0000] {logging_mixin.py:151} INFO - Successfully copied updated query.hql to container.
+[2025-05-24T13:35:13.365+0000] {python.py:194} INFO - Done. Returned value was: HQL file deleted and replaced successfully
+[2025-05-24T13:35:13.389+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=update_hql_file, execution_date=20250524T132840, start_date=20250524T133512, end_date=20250524T133513
+[2025-05-24T13:35:13.431+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-05-24T13:35:13.455+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check

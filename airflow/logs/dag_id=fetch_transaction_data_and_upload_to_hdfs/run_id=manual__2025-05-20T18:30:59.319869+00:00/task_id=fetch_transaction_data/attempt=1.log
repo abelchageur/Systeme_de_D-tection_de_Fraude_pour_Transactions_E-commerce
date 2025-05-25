@@ -1,0 +1,13 @@
+[2025-05-20T18:31:05.913+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.fetch_transaction_data manual__2025-05-20T18:30:59.319869+00:00 [queued]>
+[2025-05-20T18:31:05.923+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.fetch_transaction_data manual__2025-05-20T18:30:59.319869+00:00 [queued]>
+[2025-05-20T18:31:05.924+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-05-20T18:31:05.940+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): fetch_transaction_data> on 2025-05-20 18:30:59.319869+00:00
+[2025-05-20T18:31:05.951+0000] {standard_task_runner.py:57} INFO - Started process 444 to run task
+[2025-05-20T18:31:05.974+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'fetch_transaction_data', 'manual__2025-05-20T18:30:59.319869+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/ETL.py', '--cfg-path', '/tmp/tmp081y553b']
+[2025-05-20T18:31:05.993+0000] {standard_task_runner.py:85} INFO - Job 2: Subtask fetch_transaction_data
+[2025-05-20T18:31:06.267+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.fetch_transaction_data manual__2025-05-20T18:30:59.319869+00:00 [running]> on host 903c87353ff8
+[2025-05-20T18:31:08.038+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='fetch_transaction_data' AIRFLOW_CTX_EXECUTION_DATE='2025-05-20T18:30:59.319869+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-20T18:30:59.319869+00:00'
+[2025-05-20T18:31:14.690+0000] {python.py:194} INFO - Done. Returned value was: /tmp/transaction_data.csv
+[2025-05-20T18:31:14.726+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=fetch_transaction_data, execution_date=20250520T183059, start_date=20250520T183105, end_date=20250520T183114
+[2025-05-20T18:31:14.763+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-05-20T18:31:14.927+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check

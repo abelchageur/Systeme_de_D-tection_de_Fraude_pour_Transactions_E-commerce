@@ -1,0 +1,23 @@
+[2025-05-09T17:51:59.988+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_hive_command manual__2025-05-09T17:46:54.018372+00:00 [queued]>
+[2025-05-09T17:52:00.003+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_hive_command manual__2025-05-09T17:46:54.018372+00:00 [queued]>
+[2025-05-09T17:52:00.004+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2025-05-09T17:52:00.022+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): run_hive_command> on 2025-05-09 17:46:54.018372+00:00
+[2025-05-09T17:52:00.030+0000] {standard_task_runner.py:57} INFO - Started process 4662 to run task
+[2025-05-09T17:52:00.034+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'run_hive_command', 'manual__2025-05-09T17:46:54.018372+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/ingestion.py', '--cfg-path', '/tmp/tmpgyo3u4pi']
+[2025-05-09T17:52:00.037+0000] {standard_task_runner.py:85} INFO - Job 84: Subtask run_hive_command
+[2025-05-09T17:52:00.094+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_hive_command manual__2025-05-09T17:46:54.018372+00:00 [running]> on host d4afc872a8aa
+[2025-05-09T17:52:00.197+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='run_hive_command' AIRFLOW_CTX_EXECUTION_DATE='2025-05-09T17:46:54.018372+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-09T17:46:54.018372+00:00'
+[2025-05-09T17:52:00.199+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-05-09T17:52:00.201+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            docker exec striming_processing-postgres-1 psql -U *** -d *** -c "CREATE DATABASE metastore_db;" &&             docker exec hive schematool -initSchema -dbType postgres &&             docker exec hive hive -f /home/query.hql\n        ']
+[2025-05-09T17:52:00.212+0000] {subprocess.py:86} INFO - Output:
+[2025-05-09T17:52:00.320+0000] {subprocess.py:93} INFO - ERROR:  database "metastore_db" already exists
+[2025-05-09T17:52:00.328+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-05-09T17:52:00.342+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-05-09T17:52:00.347+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=run_hive_command, execution_date=20250509T174654, start_date=20250509T175159, end_date=20250509T175200
+[2025-05-09T17:52:00.365+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 84 for task run_hive_command (Bash command failed. The command returned a non-zero exit code 1.; 4662)
+[2025-05-09T17:52:00.411+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-05-09T17:52:00.431+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

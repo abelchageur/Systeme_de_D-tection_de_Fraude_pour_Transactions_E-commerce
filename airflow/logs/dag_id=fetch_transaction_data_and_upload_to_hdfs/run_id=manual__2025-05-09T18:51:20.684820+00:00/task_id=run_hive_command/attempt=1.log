@@ -1,0 +1,22 @@
+[2025-05-09T18:52:35.086+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_hive_command manual__2025-05-09T18:51:20.684820+00:00 [queued]>
+[2025-05-09T18:52:35.102+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_hive_command manual__2025-05-09T18:51:20.684820+00:00 [queued]>
+[2025-05-09T18:52:35.103+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-05-09T18:52:35.125+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): run_hive_command> on 2025-05-09 18:51:20.684820+00:00
+[2025-05-09T18:52:35.134+0000] {standard_task_runner.py:57} INFO - Started process 7061 to run task
+[2025-05-09T18:52:35.138+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'run_hive_command', 'manual__2025-05-09T18:51:20.684820+00:00', '--job-id', '130', '--raw', '--subdir', 'DAGS_FOLDER/ingestion.py', '--cfg-path', '/tmp/tmp6xt65rx1']
+[2025-05-09T18:52:35.142+0000] {standard_task_runner.py:85} INFO - Job 130: Subtask run_hive_command
+[2025-05-09T18:52:35.205+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_hive_command manual__2025-05-09T18:51:20.684820+00:00 [running]> on host d4afc872a8aa
+[2025-05-09T18:52:35.313+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='run_hive_command' AIRFLOW_CTX_EXECUTION_DATE='2025-05-09T18:51:20.684820+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-09T18:51:20.684820+00:00'
+[2025-05-09T18:52:35.317+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-05-09T18:52:35.319+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            set -e  # Exit immediately on error\n\n            # Only create metastore_db if it doesn\'t exist\n            docker exec striming_processing-postgres-1 psql -U *** -d *** -tc "SELECT 1 FROM pg_database WHERE datname = \'metastore_db\'" | grep -q 1 || \\\n            docker exec striming_processing-postgres-1 psql -U *** -d *** -c "CREATE DATABASE metastore_db;" && \\\n\n            # Check if Hive metastore schema is already initialized\n            docker exec hive hive --service schematool -dbType postgres -info > /tmp/schema_info.txt 2>&1\n            if grep -q "Metastore schema version:" /tmp/schema_info.txt; then\n                echo "Schema already initialized."\n            else\n                echo "Initializing Hive metastore schema..."\n                docker exec hive hive --service schematool -dbType postgres -initSchema\n            fi && \\\n\n            # Check if table already exists in Hive\n            TABLE_EXISTS=$(docker exec hive hive -e "SHOW TABLES LIKE \'dim_customers\';" | grep -i dim_customers)\n            if [ -n "$TABLE_EXISTS" ]; then\n                echo "Table \'dim_customers\' already exists. Skipping query.hql execution."\n                exit 0\n            fi && \n            # Run Hive script only if table does NOT exist\n            docker exec hive hive -f /home/query.hql\n        ']
+[2025-05-09T18:52:35.335+0000] {subprocess.py:86} INFO - Output:
+[2025-05-09T18:52:35.611+0000] {subprocess.py:97} INFO - Command exited with return code 7
+[2025-05-09T18:52:35.627+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 7.
+[2025-05-09T18:52:35.632+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=run_hive_command, execution_date=20250509T185120, start_date=20250509T185235, end_date=20250509T185235
+[2025-05-09T18:52:35.651+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 130 for task run_hive_command (Bash command failed. The command returned a non-zero exit code 7.; 7061)
+[2025-05-09T18:52:35.676+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-05-09T18:52:35.718+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

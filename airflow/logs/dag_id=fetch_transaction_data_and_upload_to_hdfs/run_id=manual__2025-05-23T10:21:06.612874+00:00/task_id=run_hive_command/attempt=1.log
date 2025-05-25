@@ -1,0 +1,17 @@
+[2025-05-23T10:21:41.176+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_hive_command manual__2025-05-23T10:21:06.612874+00:00 [queued]>
+[2025-05-23T10:21:41.187+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_hive_command manual__2025-05-23T10:21:06.612874+00:00 [queued]>
+[2025-05-23T10:21:41.188+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-05-23T10:21:41.204+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): run_hive_command> on 2025-05-23 10:21:06.612874+00:00
+[2025-05-23T10:21:41.212+0000] {standard_task_runner.py:57} INFO - Started process 1655 to run task
+[2025-05-23T10:21:41.215+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'run_hive_command', 'manual__2025-05-23T10:21:06.612874+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/ETL.py', '--cfg-path', '/tmp/tmpa_7hgv0d']
+[2025-05-23T10:21:41.218+0000] {standard_task_runner.py:85} INFO - Job 40: Subtask run_hive_command
+[2025-05-23T10:21:41.268+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_hive_command manual__2025-05-23T10:21:06.612874+00:00 [running]> on host 6c702459c558
+[2025-05-23T10:21:41.487+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='run_hive_command' AIRFLOW_CTX_EXECUTION_DATE='2025-05-23T10:21:06.612874+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-23T10:21:06.612874+00:00'
+[2025-05-23T10:21:41.488+0000] {logging_mixin.py:151} INFO - 🔍 Checking if metastore_db exists...
+[2025-05-23T10:21:41.681+0000] {logging_mixin.py:151} INFO - ❌ metastore_db does NOT exist. Creating it and initializing schema...
+[2025-05-23T10:21:41.802+0000] {logging_mixin.py:151} INFO - ⚙️ Initializing Hive metastore schema...
+[2025-05-23T10:21:44.885+0000] {logging_mixin.py:151} INFO - 🚀 Running Hive script...
+[2025-05-23T10:21:59.804+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-05-23T10:21:59.817+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=run_hive_command, execution_date=20250523T102106, start_date=20250523T102141, end_date=20250523T102159
+[2025-05-23T10:21:59.843+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-05-23T10:21:59.870+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check

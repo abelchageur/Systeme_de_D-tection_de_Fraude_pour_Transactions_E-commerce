@@ -1,0 +1,30 @@
+[2025-05-23T08:38:04.921+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_superset_dashboard manual__2025-05-23T08:32:59.289557+00:00 [queued]>
+[2025-05-23T08:38:04.930+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_superset_dashboard manual__2025-05-23T08:32:59.289557+00:00 [queued]>
+[2025-05-23T08:38:04.931+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2025-05-23T08:38:04.945+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): run_superset_dashboard> on 2025-05-23 08:32:59.289557+00:00
+[2025-05-23T08:38:04.952+0000] {standard_task_runner.py:57} INFO - Started process 12665 to run task
+[2025-05-23T08:38:04.955+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'run_superset_dashboard', 'manual__2025-05-23T08:32:59.289557+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/ETL.py', '--cfg-path', '/tmp/tmp7_0yqdhp']
+[2025-05-23T08:38:04.958+0000] {standard_task_runner.py:85} INFO - Job 38: Subtask run_superset_dashboard
+[2025-05-23T08:38:05.008+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_superset_dashboard manual__2025-05-23T08:32:59.289557+00:00 [running]> on host cb5b79c23ad2
+[2025-05-23T08:38:05.257+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='run_superset_dashboard' AIRFLOW_CTX_EXECUTION_DATE='2025-05-23T08:32:59.289557+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-23T08:32:59.289557+00:00'
+[2025-05-23T08:38:05.259+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-05-23T08:38:05.261+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'docker exec superset python /app/dashboard/step1_connection_db.py && python /app/dashboard/step2_creation_of_datasets.py && python /app/dashboard/step3_create_charts.py && python step4_create_dashbord.py']
+[2025-05-23T08:38:05.271+0000] {subprocess.py:86} INFO - Output:
+[2025-05-23T08:38:05.699+0000] {subprocess.py:93} INFO - ✅ Login successful.
+[2025-05-23T08:38:05.700+0000] {subprocess.py:93} INFO - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6dHJ1ZSwiaWF0IjoxNzQ3OTg5NDg1LCJqdGkiOiJlMzRiNzJhYy1iYWNjLTQyZTktODBkOC0xYmQ2NTk4NmQ2NDAiLCJ0eXBlIjoiYWNjZXNzIiwic3ViIjoxLCJuYmYiOjE3NDc5ODk0ODUsImNzcmYiOiIxMjZjMWYwZC00ZWYxLTRiMTAtODA2Yi00NTExZGQ1ZTgxZDAiLCJleHAiOjE3NDc5OTAzODV9.5YwxXvQTItGyl5CUByGsumV_1M5DROHLOyp09JE1Jqs
+[2025-05-23T08:38:05.700+0000] {subprocess.py:93} INFO - ✅ CSRF token received:
+[2025-05-23T08:38:05.701+0000] {subprocess.py:93} INFO - IjQ2NmIxODAzZWE1MTgxYmVmODM1ZTYxYTUwMjFiMmNmY2ExMGE4OWUi.aDAz7Q.zJBoFn1VXpooOzBB-QJSV-CyJRs
+[2025-05-23T08:38:05.701+0000] {subprocess.py:93} INFO - Status: 422
+[2025-05-23T08:38:05.701+0000] {subprocess.py:93} INFO - Response: {"message":{"database_name":"A database with the same name already exists."}}
+[2025-05-23T08:38:05.702+0000] {subprocess.py:93} INFO - 
+[2025-05-23T08:38:05.963+0000] {subprocess.py:93} INFO - python: can't open file '/app/dashboard/step2_creation_of_datasets.py': [Errno 2] No such file or directory
+[2025-05-23T08:38:05.970+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2025-05-23T08:38:05.981+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2025-05-23T08:38:05.987+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=run_superset_dashboard, execution_date=20250523T083259, start_date=20250523T083804, end_date=20250523T083805
+[2025-05-23T08:38:06.001+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 38 for task run_superset_dashboard (Bash command failed. The command returned a non-zero exit code 2.; 12665)
+[2025-05-23T08:38:06.013+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-05-23T08:38:06.035+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

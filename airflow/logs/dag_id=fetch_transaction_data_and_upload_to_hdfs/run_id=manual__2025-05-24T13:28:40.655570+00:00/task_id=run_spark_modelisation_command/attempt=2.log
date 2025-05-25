@@ -1,0 +1,72 @@
+[2025-05-24T13:34:56.565+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_spark_modelisation_command manual__2025-05-24T13:28:40.655570+00:00 [queued]>
+[2025-05-24T13:34:56.575+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_spark_modelisation_command manual__2025-05-24T13:28:40.655570+00:00 [queued]>
+[2025-05-24T13:34:56.576+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2025-05-24T13:34:56.590+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): run_spark_modelisation_command> on 2025-05-24 13:28:40.655570+00:00
+[2025-05-24T13:34:56.597+0000] {standard_task_runner.py:57} INFO - Started process 461 to run task
+[2025-05-24T13:34:56.600+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'run_spark_modelisation_command', 'manual__2025-05-24T13:28:40.655570+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/ETL.py', '--cfg-path', '/tmp/tmp3uxgcy_6']
+[2025-05-24T13:34:56.603+0000] {standard_task_runner.py:85} INFO - Job 13: Subtask run_spark_modelisation_command
+[2025-05-24T13:34:56.652+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_spark_modelisation_command manual__2025-05-24T13:28:40.655570+00:00 [running]> on host 1be44660cb93
+[2025-05-24T13:34:56.868+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='run_spark_modelisation_command' AIRFLOW_CTX_EXECUTION_DATE='2025-05-24T13:28:40.655570+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-24T13:28:40.655570+00:00'
+[2025-05-24T13:34:56.871+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-05-24T13:34:56.872+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'docker exec spark-master python3 modelisation.py']
+[2025-05-24T13:34:56.884+0000] {subprocess.py:86} INFO - Output:
+[2025-05-24T13:34:59.009+0000] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2025-05-24T13:34:59.010+0000] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2025-05-24T13:34:59.342+0000] {subprocess.py:93} INFO - 25/05/24 13:34:59 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-05-24T13:35:04.045+0000] {subprocess.py:93} INFO - 25/05/24 13:35:04 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+[2025-05-24T13:35:04.046+0000] {subprocess.py:93} INFO -  Header: Transaction ID, Customer ID, Transaction Amount, Transaction Date, Payment Method, Product Category, Quantity, Customer Age, Customer Location, Device Used, IP Address, Shipping Address, Billing Address, Is Fraudulent, Account Age Days, Transaction Hour
+[2025-05-24T13:35:04.047+0000] {subprocess.py:93} INFO -  Schema: Transaction_ID, Customer_ID, Transaction_Amount, Transaction_Date, Payment_Method, Product_Category, Quantity, Customer_Age, Customer_Location, Device_Used, IP_Address, Shipping_Address, Billing_Address, Is_Fraudulent, Account_Age_Days, Transaction_Hour
+[2025-05-24T13:35:04.047+0000] {subprocess.py:93} INFO - Expected: Transaction_ID but found: Transaction ID
+[2025-05-24T13:35:04.047+0000] {subprocess.py:93} INFO - CSV file: hdfs://namenode:9000/user/root/transactions/YYYY=2025/MM=05/DD=24/transaction_data.csv
+[2025-05-24T13:35:05.535+0000] {subprocess.py:93} INFO - [Stage 0:>                                                          (0 + 1) / 1]                                                                                25/05/24 13:35:05 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+[2025-05-24T13:35:05.536+0000] {subprocess.py:93} INFO -  Header: Transaction ID, Customer ID, Transaction Amount, Transaction Date, Payment Method, Product Category, Quantity, Customer Age, Customer Location, Device Used, IP Address, Shipping Address, Billing Address, Is Fraudulent, Account Age Days, Transaction Hour
+[2025-05-24T13:35:05.537+0000] {subprocess.py:93} INFO -  Schema: Transaction_ID, Customer_ID, Transaction_Amount, Transaction_Date, Payment_Method, Product_Category, Quantity, Customer_Age, Customer_Location, Device_Used, IP_Address, Shipping_Address, Billing_Address, Is_Fraudulent, Account_Age_Days, Transaction_Hour
+[2025-05-24T13:35:05.538+0000] {subprocess.py:93} INFO - Expected: Transaction_ID but found: Transaction ID
+[2025-05-24T13:35:05.538+0000] {subprocess.py:93} INFO - CSV file: hdfs://namenode:9000/user/root/transactions/YYYY=2025/MM=05/DD=24/transaction_data.csv
+[2025-05-24T13:35:05.597+0000] {subprocess.py:93} INFO - 25/05/24 13:35:05 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+[2025-05-24T13:35:05.598+0000] {subprocess.py:93} INFO -  Header: Transaction ID, Customer ID, Transaction Amount, Transaction Date, Payment Method, Product Category, Quantity, Customer Age, Customer Location, Device Used, IP Address, Shipping Address, Billing Address, Is Fraudulent, Account Age Days, Transaction Hour
+[2025-05-24T13:35:05.598+0000] {subprocess.py:93} INFO -  Schema: Transaction_ID, Customer_ID, Transaction_Amount, Transaction_Date, Payment_Method, Product_Category, Quantity, Customer_Age, Customer_Location, Device_Used, IP_Address, Shipping_Address, Billing_Address, Is_Fraudulent, Account_Age_Days, Transaction_Hour
+[2025-05-24T13:35:05.599+0000] {subprocess.py:93} INFO - Expected: Transaction_ID but found: Transaction ID
+[2025-05-24T13:35:05.599+0000] {subprocess.py:93} INFO - CSV file: hdfs://namenode:9000/user/root/transactions/YYYY=2025/MM=05/DD=24/transaction_data.csv
+[2025-05-24T13:35:05.698+0000] {subprocess.py:93} INFO - 25/05/24 13:35:05 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+[2025-05-24T13:35:05.698+0000] {subprocess.py:93} INFO -  Header: Transaction ID, Customer ID, Transaction Amount, Transaction Date, Payment Method, Product Category, Quantity, Customer Age, Customer Location, Device Used, IP Address, Shipping Address, Billing Address, Is Fraudulent, Account Age Days, Transaction Hour
+[2025-05-24T13:35:05.699+0000] {subprocess.py:93} INFO -  Schema: Transaction_ID, Customer_ID, Transaction_Amount, Transaction_Date, Payment_Method, Product_Category, Quantity, Customer_Age, Customer_Location, Device_Used, IP_Address, Shipping_Address, Billing_Address, Is_Fraudulent, Account_Age_Days, Transaction_Hour
+[2025-05-24T13:35:05.700+0000] {subprocess.py:93} INFO - Expected: Transaction_ID but found: Transaction ID
+[2025-05-24T13:35:05.700+0000] {subprocess.py:93} INFO - CSV file: hdfs://namenode:9000/user/root/transactions/YYYY=2025/MM=05/DD=24/transaction_data.csv
+[2025-05-24T13:35:06.461+0000] {subprocess.py:93} INFO - 25/05/24 13:35:06 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+[2025-05-24T13:35:06.462+0000] {subprocess.py:93} INFO -  Header: Transaction ID, Customer ID, Transaction Amount, Transaction Date, Payment Method, Product Category, Quantity, Customer Age, Customer Location, Device Used, IP Address, Shipping Address, Billing Address, Is Fraudulent, Account Age Days, Transaction Hour
+[2025-05-24T13:35:06.463+0000] {subprocess.py:93} INFO -  Schema: Transaction_ID, Customer_ID, Transaction_Amount, Transaction_Date, Payment_Method, Product_Category, Quantity, Customer_Age, Customer_Location, Device_Used, IP_Address, Shipping_Address, Billing_Address, Is_Fraudulent, Account_Age_Days, Transaction_Hour
+[2025-05-24T13:35:06.463+0000] {subprocess.py:93} INFO - Expected: Transaction_ID but found: Transaction ID
+[2025-05-24T13:35:06.463+0000] {subprocess.py:93} INFO - CSV file: hdfs://namenode:9000/user/root/transactions/YYYY=2025/MM=05/DD=24/transaction_data.csv
+[2025-05-24T13:35:07.927+0000] {subprocess.py:93} INFO - [Stage 12:>                                                         (0 + 1) / 1]                                                                                [Stage 13:>                                                         (0 + 1) / 1]25/05/24 13:35:07 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+[2025-05-24T13:35:07.928+0000] {subprocess.py:93} INFO -  Header: Transaction ID, Customer ID, Transaction Amount, Transaction Date, Payment Method, Product Category, Quantity, Customer Age, Customer Location, Device Used, IP Address, Shipping Address, Billing Address, Is Fraudulent, Account Age Days, Transaction Hour
+[2025-05-24T13:35:07.928+0000] {subprocess.py:93} INFO -  Schema: Transaction_ID, Customer_ID, Transaction_Amount, Transaction_Date, Payment_Method, Product_Category, Quantity, Customer_Age, Customer_Location, Device_Used, IP_Address, Shipping_Address, Billing_Address, Is_Fraudulent, Account_Age_Days, Transaction_Hour
+[2025-05-24T13:35:07.929+0000] {subprocess.py:93} INFO - Expected: Transaction_ID but found: Transaction ID
+[2025-05-24T13:35:07.929+0000] {subprocess.py:93} INFO - CSV file: hdfs://namenode:9000/user/root/transactions/YYYY=2025/MM=05/DD=24/transaction_data.csv
+[2025-05-24T13:35:08.806+0000] {subprocess.py:93} INFO -                                                                                 25/05/24 13:35:08 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+[2025-05-24T13:35:08.807+0000] {subprocess.py:93} INFO -  Header: Transaction ID, Customer ID, Transaction Amount, Transaction Date, Payment Method, Product Category, Quantity, Customer Age, Customer Location, Device Used, IP Address, Shipping Address, Billing Address, Is Fraudulent, Account Age Days, Transaction Hour
+[2025-05-24T13:35:08.807+0000] {subprocess.py:93} INFO -  Schema: Transaction_ID, Customer_ID, Transaction_Amount, Transaction_Date, Payment_Method, Product_Category, Quantity, Customer_Age, Customer_Location, Device_Used, IP_Address, Shipping_Address, Billing_Address, Is_Fraudulent, Account_Age_Days, Transaction_Hour
+[2025-05-24T13:35:08.808+0000] {subprocess.py:93} INFO - Expected: Transaction_ID but found: Transaction ID
+[2025-05-24T13:35:08.808+0000] {subprocess.py:93} INFO - CSV file: hdfs://namenode:9000/user/root/transactions/YYYY=2025/MM=05/DD=24/transaction_data.csv
+[2025-05-24T13:35:09.207+0000] {subprocess.py:93} INFO - 25/05/24 13:35:09 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+[2025-05-24T13:35:09.208+0000] {subprocess.py:93} INFO -  Header: Transaction ID, Customer ID, Transaction Amount, Transaction Date, Payment Method, Product Category, Quantity, Customer Age, Customer Location, Device Used, IP Address, Shipping Address, Billing Address, Is Fraudulent, Account Age Days, Transaction Hour
+[2025-05-24T13:35:09.209+0000] {subprocess.py:93} INFO -  Schema: Transaction_ID, Customer_ID, Transaction_Amount, Transaction_Date, Payment_Method, Product_Category, Quantity, Customer_Age, Customer_Location, Device_Used, IP_Address, Shipping_Address, Billing_Address, Is_Fraudulent, Account_Age_Days, Transaction_Hour
+[2025-05-24T13:35:09.209+0000] {subprocess.py:93} INFO - Expected: Transaction_ID but found: Transaction ID
+[2025-05-24T13:35:09.210+0000] {subprocess.py:93} INFO - CSV file: hdfs://namenode:9000/user/root/transactions/YYYY=2025/MM=05/DD=24/transaction_data.csv
+[2025-05-24T13:35:09.610+0000] {subprocess.py:93} INFO - 25/05/24 13:35:09 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+[2025-05-24T13:35:09.611+0000] {subprocess.py:93} INFO -  Header: Transaction ID, Customer ID, Transaction Amount, Transaction Date, Payment Method, Product Category, Quantity, Customer Age, Customer Location, Device Used, IP Address, Shipping Address, Billing Address, Is Fraudulent, Account Age Days, Transaction Hour
+[2025-05-24T13:35:09.611+0000] {subprocess.py:93} INFO -  Schema: Transaction_ID, Customer_ID, Transaction_Amount, Transaction_Date, Payment_Method, Product_Category, Quantity, Customer_Age, Customer_Location, Device_Used, IP_Address, Shipping_Address, Billing_Address, Is_Fraudulent, Account_Age_Days, Transaction_Hour
+[2025-05-24T13:35:09.612+0000] {subprocess.py:93} INFO - Expected: Transaction_ID but found: Transaction ID
+[2025-05-24T13:35:09.612+0000] {subprocess.py:93} INFO - CSV file: hdfs://namenode:9000/user/root/transactions/YYYY=2025/MM=05/DD=24/transaction_data.csv
+[2025-05-24T13:35:10.045+0000] {subprocess.py:93} INFO - 25/05/24 13:35:10 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+[2025-05-24T13:35:10.046+0000] {subprocess.py:93} INFO -  Header: Transaction ID, Customer ID, Transaction Amount, Transaction Date, Payment Method, Product Category, Quantity, Customer Age, Customer Location, Device Used, IP Address, Shipping Address, Billing Address, Is Fraudulent, Account Age Days, Transaction Hour
+[2025-05-24T13:35:10.047+0000] {subprocess.py:93} INFO -  Schema: Transaction_ID, Customer_ID, Transaction_Amount, Transaction_Date, Payment_Method, Product_Category, Quantity, Customer_Age, Customer_Location, Device_Used, IP_Address, Shipping_Address, Billing_Address, Is_Fraudulent, Account_Age_Days, Transaction_Hour
+[2025-05-24T13:35:10.048+0000] {subprocess.py:93} INFO - Expected: Transaction_ID but found: Transaction ID
+[2025-05-24T13:35:10.048+0000] {subprocess.py:93} INFO - CSV file: hdfs://namenode:9000/user/root/transactions/YYYY=2025/MM=05/DD=24/transaction_data.csv
+[2025-05-24T13:35:10.682+0000] {subprocess.py:93} INFO - Spark session created successfully!
+[2025-05-24T13:35:10.683+0000] {subprocess.py:93} INFO - Data loaded successfully. Row count: 23634
+[2025-05-24T13:35:10.683+0000] {subprocess.py:93} INFO - Data saved to HDFS successfully!
+[2025-05-24T13:35:11.147+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-05-24T13:35:11.172+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=run_spark_modelisation_command, execution_date=20250524T132840, start_date=20250524T133456, end_date=20250524T133511
+[2025-05-24T13:35:11.235+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-05-24T13:35:11.260+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,25 @@
+[2025-05-24T22:02:02.932+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.update_hql_file manual__2025-05-24T21:56:08.175397+00:00 [queued]>
+[2025-05-24T22:02:02.943+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.update_hql_file manual__2025-05-24T21:56:08.175397+00:00 [queued]>
+[2025-05-24T22:02:02.943+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2025-05-24T22:02:02.960+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): update_hql_file> on 2025-05-24 21:56:08.175397+00:00
+[2025-05-24T22:02:02.970+0000] {standard_task_runner.py:57} INFO - Started process 404 to run task
+[2025-05-24T22:02:02.974+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'update_hql_file', 'manual__2025-05-24T21:56:08.175397+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/ETL.py', '--cfg-path', '/tmp/tmp_ol962zk']
+[2025-05-24T22:02:02.979+0000] {standard_task_runner.py:85} INFO - Job 14: Subtask update_hql_file
+[2025-05-24T22:02:03.044+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.update_hql_file manual__2025-05-24T21:56:08.175397+00:00 [running]> on host 65b298c9af88
+[2025-05-24T22:02:03.145+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='update_hql_file' AIRFLOW_CTX_EXECUTION_DATE='2025-05-24T21:56:08.175397+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-24T21:56:08.175397+00:00'
+[2025-05-24T22:02:03.147+0000] {logging_mixin.py:151} INFO - Attempting to delete existing file: /home/query.hql inside container 'hive'
+[2025-05-24T22:02:03.216+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/ETL.py", line 71, in update_hql_file
+    raise Exception(f"Failed to delete old file in container: {delete_result.stderr}")
+Exception: Failed to delete old file in container: Error response from daemon: container 540da5d1ce1ad1f3a82f51a836917a352a6f2f846becd3c3b66da889be739adb is not running
+
+[2025-05-24T22:02:03.235+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=update_hql_file, execution_date=20250524T215608, start_date=20250524T220202, end_date=20250524T220203
+[2025-05-24T22:02:03.255+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 14 for task update_hql_file (Failed to delete old file in container: Error response from daemon: container 540da5d1ce1ad1f3a82f51a836917a352a6f2f846becd3c3b66da889be739adb is not running
+; 404)
+[2025-05-24T22:02:03.270+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-05-24T22:02:03.305+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

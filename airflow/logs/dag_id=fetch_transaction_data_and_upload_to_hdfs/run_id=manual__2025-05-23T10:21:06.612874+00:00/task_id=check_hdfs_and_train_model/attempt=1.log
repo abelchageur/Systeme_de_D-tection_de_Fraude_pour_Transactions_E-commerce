@@ -1,0 +1,14 @@
+[2025-05-23T10:21:17.912+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.check_hdfs_and_train_model manual__2025-05-23T10:21:06.612874+00:00 [queued]>
+[2025-05-23T10:21:17.923+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.check_hdfs_and_train_model manual__2025-05-23T10:21:06.612874+00:00 [queued]>
+[2025-05-23T10:21:17.924+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-05-23T10:21:17.936+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): check_hdfs_and_train_model> on 2025-05-23 10:21:06.612874+00:00
+[2025-05-23T10:21:17.945+0000] {standard_task_runner.py:57} INFO - Started process 1598 to run task
+[2025-05-23T10:21:17.948+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'check_hdfs_and_train_model', 'manual__2025-05-23T10:21:06.612874+00:00', '--job-id', '37', '--raw', '--subdir', 'DAGS_FOLDER/ETL.py', '--cfg-path', '/tmp/tmpfxi1t3c9']
+[2025-05-23T10:21:17.952+0000] {standard_task_runner.py:85} INFO - Job 37: Subtask check_hdfs_and_train_model
+[2025-05-23T10:21:17.999+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.check_hdfs_and_train_model manual__2025-05-23T10:21:06.612874+00:00 [running]> on host 6c702459c558
+[2025-05-23T10:21:18.234+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='check_hdfs_and_train_model' AIRFLOW_CTX_EXECUTION_DATE='2025-05-23T10:21:06.612874+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-23T10:21:06.612874+00:00'
+[2025-05-23T10:21:20.093+0000] {logging_mixin.py:151} INFO - ✅ Model already exists at hdfs://namenode:9000/user/root/model/fraud_detection. Skipping training.
+[2025-05-23T10:21:20.095+0000] {taskinstance.py:1542} INFO - Model already exists in HDFS.
+[2025-05-23T10:21:20.108+0000] {taskinstance.py:1400} INFO - Marking task as SKIPPED. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=check_hdfs_and_train_model, execution_date=20250523T102106, start_date=20250523T102117, end_date=20250523T102120
+[2025-05-23T10:21:20.174+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-05-23T10:21:20.193+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

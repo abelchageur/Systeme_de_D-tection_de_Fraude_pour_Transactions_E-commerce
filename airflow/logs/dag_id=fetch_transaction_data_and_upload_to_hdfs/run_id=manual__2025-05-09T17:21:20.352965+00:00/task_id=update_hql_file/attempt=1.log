@@ -1,0 +1,24 @@
+[2025-05-09T17:21:23.045+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.update_hql_file manual__2025-05-09T17:21:20.352965+00:00 [queued]>
+[2025-05-09T17:21:23.053+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.update_hql_file manual__2025-05-09T17:21:20.352965+00:00 [queued]>
+[2025-05-09T17:21:23.054+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-05-09T17:21:23.070+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): update_hql_file> on 2025-05-09 17:21:20.352965+00:00
+[2025-05-09T17:21:23.079+0000] {standard_task_runner.py:57} INFO - Started process 3570 to run task
+[2025-05-09T17:21:23.082+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'update_hql_file', 'manual__2025-05-09T17:21:20.352965+00:00', '--job-id', '63', '--raw', '--subdir', 'DAGS_FOLDER/ingestion.py', '--cfg-path', '/tmp/tmpbkux71op']
+[2025-05-09T17:21:23.086+0000] {standard_task_runner.py:85} INFO - Job 63: Subtask update_hql_file
+[2025-05-09T17:21:23.144+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.update_hql_file manual__2025-05-09T17:21:20.352965+00:00 [running]> on host d4afc872a8aa
+[2025-05-09T17:21:23.249+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='update_hql_file' AIRFLOW_CTX_EXECUTION_DATE='2025-05-09T17:21:20.352965+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-09T17:21:20.352965+00:00'
+[2025-05-09T17:21:23.302+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/ingestion.py", line 66, in update_hql_file
+    raise Exception(f"Failed to delete file: {result.stderr}")
+Exception: Failed to delete file: Error response from daemon: container a4afb1d294c38981da646ca74b16a3130248d4354fc4cfa57941a60d460b64bb is not running
+
+[2025-05-09T17:21:23.319+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=update_hql_file, execution_date=20250509T172120, start_date=20250509T172123, end_date=20250509T172123
+[2025-05-09T17:21:23.337+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 63 for task update_hql_file (Failed to delete file: Error response from daemon: container a4afb1d294c38981da646ca74b16a3130248d4354fc4cfa57941a60d460b64bb is not running
+; 3570)
+[2025-05-09T17:21:23.377+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-05-09T17:21:23.407+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

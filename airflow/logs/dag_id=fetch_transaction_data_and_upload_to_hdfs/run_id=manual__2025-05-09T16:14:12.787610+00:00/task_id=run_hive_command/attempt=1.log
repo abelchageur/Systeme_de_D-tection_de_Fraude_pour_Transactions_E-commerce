@@ -1,0 +1,30 @@
+[2025-05-09T16:14:16.958+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_hive_command manual__2025-05-09T16:14:12.787610+00:00 [queued]>
+[2025-05-09T16:14:16.967+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_hive_command manual__2025-05-09T16:14:12.787610+00:00 [queued]>
+[2025-05-09T16:14:16.967+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-05-09T16:14:16.984+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): run_hive_command> on 2025-05-09 16:14:12.787610+00:00
+[2025-05-09T16:14:16.991+0000] {standard_task_runner.py:57} INFO - Started process 2501 to run task
+[2025-05-09T16:14:16.994+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fetch_transaction_data_and_upload_to_hdfs', 'run_hive_command', 'manual__2025-05-09T16:14:12.787610+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/ingestion.py', '--cfg-path', '/tmp/tmpmpq2vui8']
+[2025-05-09T16:14:16.996+0000] {standard_task_runner.py:85} INFO - Job 49: Subtask run_hive_command
+[2025-05-09T16:14:17.045+0000] {task_command.py:415} INFO - Running <TaskInstance: fetch_transaction_data_and_upload_to_hdfs.run_hive_command manual__2025-05-09T16:14:12.787610+00:00 [running]> on host d4afc872a8aa
+[2025-05-09T16:14:17.127+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_transaction_data_and_upload_to_hdfs' AIRFLOW_CTX_TASK_ID='run_hive_command' AIRFLOW_CTX_EXECUTION_DATE='2025-05-09T16:14:12.787610+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-09T16:14:12.787610+00:00'
+[2025-05-09T16:14:17.129+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-05-09T16:14:17.134+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'docker exec hive hive -f query.hql']
+[2025-05-09T16:14:17.144+0000] {subprocess.py:86} INFO - Output:
+[2025-05-09T16:14:18.817+0000] {subprocess.py:93} INFO - SLF4J: Class path contains multiple SLF4J bindings.
+[2025-05-09T16:14:18.817+0000] {subprocess.py:93} INFO - SLF4J: Found binding in [jar:file:/opt/hive/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+[2025-05-09T16:14:18.818+0000] {subprocess.py:93} INFO - SLF4J: Found binding in [jar:file:/opt/hadoop-2.7.4/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+[2025-05-09T16:14:18.819+0000] {subprocess.py:93} INFO - SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+[2025-05-09T16:14:18.819+0000] {subprocess.py:93} INFO - SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+[2025-05-09T16:14:19.968+0000] {subprocess.py:93} INFO - 
+[2025-05-09T16:14:19.969+0000] {subprocess.py:93} INFO - Logging initialized using configuration in file:/opt/hive/conf/hive-log4j2.properties Async: true
+[2025-05-09T16:14:47.720+0000] {subprocess.py:93} INFO - FAILED: SemanticException org.apache.hadoop.hive.ql.metadata.HiveException: java.lang.RuntimeException: Unable to instantiate org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient
+[2025-05-09T16:15:34.148+0000] {subprocess.py:97} INFO - Command exited with return code 64
+[2025-05-09T16:15:34.162+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 64.
+[2025-05-09T16:15:34.168+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=fetch_transaction_data_and_upload_to_hdfs, task_id=run_hive_command, execution_date=20250509T161412, start_date=20250509T161416, end_date=20250509T161534
+[2025-05-09T16:15:34.186+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 49 for task run_hive_command (Bash command failed. The command returned a non-zero exit code 64.; 2501)
+[2025-05-09T16:15:34.220+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-05-09T16:15:34.243+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

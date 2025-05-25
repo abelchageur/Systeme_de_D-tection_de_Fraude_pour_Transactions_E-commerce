@@ -1,0 +1,913 @@
+import requests
+import json
+
+# Create a session to keep cookies
+session = requests.Session()
+
+# Step 1: Login to Superset
+login_url = "http://localhost:8088/api/v1/security/login"
+credentials = {
+    "username": "admin",
+    "password": "admin",
+    "provider": "db"
+}
+response = session.post(login_url, json=credentials)
+if response.status_code != 200:
+    print(f"❌ Login failed: {response.text}")
+    exit(1)
+access_token = response.json()["access_token"]
+print("✅ Logged in successfully")
+
+# Step 2: Get CSRF Token
+csrf_url = "http://localhost:8088/api/v1/security/csrf_token/"
+headers = {
+    "Authorization": f"Bearer {access_token}",
+    "Content-Type": "application/json"
+}
+csrf_response = session.get(csrf_url, headers=headers)
+if csrf_response.status_code != 200:
+    print(f"❌ Failed to get CSRF token: {csrf_response.text}")
+    exit(1)
+csrf_token = csrf_response.json()["result"]
+headers.update({"X-CSRFToken": csrf_token})
+print("✅ CSRF token retrieved")
+
+# Helper function to get dataset ID by name
+def get_dataset_id_by_name(dataset_name):
+    """Helper function to get dataset ID by name"""
+    get_datasets_url = "http://localhost:8088/api/v1/dataset/"
+    params = {
+        "q": f"(filters:!((col:table_name,opr:eq,value:'{dataset_name}')))"
+    }
+    response = session.get(get_datasets_url, headers=headers, params=params)
+    if response.status_code == 200 and response.json()["result"]:
+        return response.json()["result"][0]["id"]
+    return None
+
+# =============================================================================
+# CHART CONFIGURATION - MODIFY THIS SECTION
+# =============================================================================
+
+# Dataset and Chart Details
+DATASET_NAME = "Proportion of Fraudulent Transactions"        # Replace with your dataset name
+CHART_NAME = "Fraud Detection Overview"            # Replace with your chart name
+CHART_TYPE = "pie"                             # pie, dist_bar, line, area, table
+
+# Chart Data Configuration
+DIMENSIONS = ["transaction_type"]        
+METRICS = [{ "label": "transaction_count",
+             "expressionType": "SQL",
+             "sqlExpression": "SUM(transaction_count)"  
+          }]      
+
+# Chart Options (modify as needed)
+CHART_OPTIONS = {
+    # For Pie Charts
+    "donut": False,                            # True for donut chart
+    "show_labels": True,
+    "pie_label_type": "key_percent",           # key, value, percent, key_value, key_percent
+    
+    # For Bar Charts
+    "bar_stacked": False,                      # True for stacked bars
+    "show_legend": True,
+    "x_axis_label": "Your X Label",
+    "y_axis_label": "Your Y Label",
+    
+    # For Line Charts
+    "show_markers": True,
+    "line_interpolation": "linear",            # linear, basis, cardinal, monotone
+    
+    # General Options
+    "color_scheme": "supersetColors"
+}
+
+# =============================================================================
+# CHART CREATION - DON'T MODIFY BELOW THIS LINE
+# =============================================================================
+
+# Get dataset ID
+dataset_id = get_dataset_id_by_name(DATASET_NAME)
+if not dataset_id:
+    print(f"❌ Dataset '{DATASET_NAME}' not found")
+    exit(1)
+
+print(f"✅ Found dataset '{DATASET_NAME}' with ID: {dataset_id}")
+
+# Create chart payload
+chart_payload = {
+    "datasource_id": dataset_id,
+    "datasource_type": "table",
+    "slice_name": CHART_NAME,
+    "viz_type": CHART_TYPE,
+    "params": json.dumps({
+        "datasource": f"{dataset_id}__table",
+        "viz_type": CHART_TYPE,
+        "groupby": DIMENSIONS,
+        "metrics": METRICS,
+        "adhoc_filters": [],
+        "row_limit": 10000,
+        **CHART_OPTIONS
+    }),
+    "query_context": json.dumps({
+        "datasource": {
+            "id": dataset_id,
+            "type": "table"
+        },
+        "queries": [{
+            "columns": DIMENSIONS,
+            "metrics": METRICS,
+            "orderby": [],
+            "row_limit": 10000
+        }]
+    })
+}
+
+# Create the chart
+response = session.post("http://localhost:8088/api/v1/chart/", headers=headers, json=chart_payload)
+
+if response.status_code == 201:
+    chart_id = response.json()['id']
+    print(f"✅ Chart '{CHART_NAME}' created successfully!")
+    print(f"   Chart ID: {chart_id}")
+    print(f"   Dataset: {DATASET_NAME}")
+    print(f"   Type: {CHART_TYPE}")
+    print(f"   Dimensions: {DIMENSIONS}")
+    print(f"   Metrics: {METRICS}")
+else:
+    print(f"❌ Failed to create chart: {response.text}")
+    print(f"Status Code: {response.status_code}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# =============================================================================
+# CHART CONFIGURATION - MODIFY THIS SECTION
+# =============================================================================
+
+# Dataset and Chart Details
+DATASET_NAME = "Number of Transactions by Month"        # Replace with your dataset name
+CHART_NAME = "Number of Transactions by Month"            # Replace with your chart name
+CHART_TYPE = "dist_bar"                             # pie, dist_bar, line, area, table
+
+# Chart Data Configuration
+DIMENSIONS = ["transaction_month"]        
+METRICS = [{ "label": "transaction_count",
+             "expressionType": "SQL",
+             "sqlExpression": "SUM(transaction_count)"  
+          }]      
+
+# Chart Options (modify as needed)
+CHART_OPTIONS = {
+    # For Pie Charts
+    "donut": False,                            # True for donut chart
+    "show_labels": True,
+    "pie_label_type": "key_percent",           # key, value, percent, key_value, key_percent
+    
+    # For Bar Charts
+    "bar_stacked": False,                      # True for stacked bars
+    "show_legend": True,
+    "x_axis_label": "Your X Label",
+    "y_axis_label": "Your Y Label",
+    
+    # For Line Charts
+    "show_markers": True,
+    "line_interpolation": "linear",            # linear, basis, cardinal, monotone
+    
+    # General Options
+    "color_scheme": "supersetColors"
+}
+
+# =============================================================================
+# CHART CREATION - DON'T MODIFY BELOW THIS LINE
+# =============================================================================
+
+# Get dataset ID
+dataset_id = get_dataset_id_by_name(DATASET_NAME)
+if not dataset_id:
+    print(f"❌ Dataset '{DATASET_NAME}' not found")
+    exit(1)
+
+print(f"✅ Found dataset '{DATASET_NAME}' with ID: {dataset_id}")
+
+# Create chart payload
+chart_payload = {
+    "datasource_id": dataset_id,
+    "datasource_type": "table",
+    "slice_name": CHART_NAME,
+    "viz_type": CHART_TYPE,
+    "params": json.dumps({
+        "datasource": f"{dataset_id}__table",
+        "viz_type": CHART_TYPE,
+        "groupby": DIMENSIONS,
+        "metrics": METRICS,
+        "adhoc_filters": [],
+        "row_limit": 10000,
+        **CHART_OPTIONS
+    }),
+    "query_context": json.dumps({
+        "datasource": {
+            "id": dataset_id,
+            "type": "table"
+        },
+        "queries": [{
+            "columns": DIMENSIONS,
+            "metrics": METRICS,
+            "orderby": [],
+            "row_limit": 10000
+        }]
+    })
+}
+
+# Create the chart
+response = session.post("http://localhost:8088/api/v1/chart/", headers=headers, json=chart_payload)
+
+if response.status_code == 201:
+    chart_id = response.json()['id']
+    print(f"✅ Chart '{CHART_NAME}' created successfully!")
+    print(f"   Chart ID: {chart_id}")
+    print(f"   Dataset: {DATASET_NAME}")
+    print(f"   Type: {CHART_TYPE}")
+    print(f"   Dimensions: {DIMENSIONS}")
+    print(f"   Metrics: {METRICS}")
+else:
+    print(f"❌ Failed to create chart: {response.text}")
+    print(f"Status Code: {response.status_code}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# =============================================================================
+# CHART CONFIGURATION - MODIFY THIS SECTION
+# =============================================================================
+
+# Dataset and Chart Details
+DATASET_NAME = "Average Transaction Amount by Customer Age Group"        # Replace with your dataset name
+CHART_NAME = "Average Transaction Amount by Customer Age Group"            # Replace with your chart name
+CHART_TYPE = "dist_bar"                             # pie, dist_bar, line, area, table
+
+# Chart Data Configuration
+DIMENSIONS = ["age_group"]        
+METRICS = [{ "label": "average_amount",
+             "expressionType": "SQL",
+             "sqlExpression": "SUM(average_amount)"  
+          }]      
+
+# Chart Options (modify as needed)
+CHART_OPTIONS = {
+    # For Pie Charts
+    "donut": False,                            # True for donut chart
+    "show_labels": True,
+    "pie_label_type": "key_percent",           # key, value, percent, key_value, key_percent
+    
+    # For Bar Charts
+    "bar_stacked": False,                      # True for stacked bars
+    "show_legend": True,
+    "x_axis_label": "Your X Label",
+    "y_axis_label": "Your Y Label",
+    
+    # For Line Charts
+    "show_markers": True,
+    "line_interpolation": "linear",            # linear, basis, cardinal, monotone
+    
+    # General Options
+    "color_scheme": "supersetColors"
+}
+
+# =============================================================================
+# CHART CREATION - DON'T MODIFY BELOW THIS LINE
+# =============================================================================
+
+# Get dataset ID
+dataset_id = get_dataset_id_by_name(DATASET_NAME)
+if not dataset_id:
+    print(f"❌ Dataset '{DATASET_NAME}' not found")
+    exit(1)
+
+print(f"✅ Found dataset '{DATASET_NAME}' with ID: {dataset_id}")
+
+# Create chart payload
+chart_payload = {
+    "datasource_id": dataset_id,
+    "datasource_type": "table",
+    "slice_name": CHART_NAME,
+    "viz_type": CHART_TYPE,
+    "params": json.dumps({
+        "datasource": f"{dataset_id}__table",
+        "viz_type": CHART_TYPE,
+        "groupby": DIMENSIONS,
+        "metrics": METRICS,
+        "adhoc_filters": [],
+        "row_limit": 10000,
+        **CHART_OPTIONS
+    }),
+    "query_context": json.dumps({
+        "datasource": {
+            "id": dataset_id,
+            "type": "table"
+        },
+        "queries": [{
+            "columns": DIMENSIONS,
+            "metrics": METRICS,
+            "orderby": [],
+            "row_limit": 10000
+        }]
+    })
+}
+
+# Create the chart
+response = session.post("http://localhost:8088/api/v1/chart/", headers=headers, json=chart_payload)
+
+if response.status_code == 201:
+    chart_id = response.json()['id']
+    print(f"✅ Chart '{CHART_NAME}' created successfully!")
+    print(f"   Chart ID: {chart_id}")
+    print(f"   Dataset: {DATASET_NAME}")
+    print(f"   Type: {CHART_TYPE}")
+    print(f"   Dimensions: {DIMENSIONS}")
+    print(f"   Metrics: {METRICS}")
+else:
+    print(f"❌ Failed to create chart: {response.text}")
+    print(f"Status Code: {response.status_code}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# =============================================================================
+# CHART CONFIGURATION - MODIFY THIS SECTION
+# =============================================================================
+
+# Dataset and Chart Details
+DATASET_NAME = "Distribution of Payment Methods"        # Replace with your dataset name
+CHART_NAME = "Distribution of Payment Methods"            # Replace with your chart name
+CHART_TYPE = "dist_bar"                             # pie, dist_bar, line, area, table
+
+# Chart Data Configuration
+DIMENSIONS = ["payment_method"]        
+METRICS = [{ "label": "transaction_count",
+             "expressionType": "SQL",
+             "sqlExpression": "SUM(transaction_count)"  
+          }]      
+
+# Chart Options (modify as needed)
+CHART_OPTIONS = {
+    # For Pie Charts
+    "donut": False,                            # True for donut chart
+    "show_labels": True,
+    "pie_label_type": "key_percent",           # key, value, percent, key_value, key_percent
+    
+    # For Bar Charts
+    "bar_stacked": False,                      # True for stacked bars
+    "show_legend": True,
+    "x_axis_label": "Your X Label",
+    "y_axis_label": "Your Y Label",
+    
+    # For Line Charts
+    "show_markers": True,
+    "line_interpolation": "linear",            # linear, basis, cardinal, monotone
+    
+    # General Options
+    "color_scheme": "supersetColors"
+}
+
+# =============================================================================
+# CHART CREATION - DON'T MODIFY BELOW THIS LINE
+# =============================================================================
+
+# Get dataset ID
+dataset_id = get_dataset_id_by_name(DATASET_NAME)
+if not dataset_id:
+    print(f"❌ Dataset '{DATASET_NAME}' not found")
+    exit(1)
+
+print(f"✅ Found dataset '{DATASET_NAME}' with ID: {dataset_id}")
+
+# Create chart payload
+chart_payload = {
+    "datasource_id": dataset_id,
+    "datasource_type": "table",
+    "slice_name": CHART_NAME,
+    "viz_type": CHART_TYPE,
+    "params": json.dumps({
+        "datasource": f"{dataset_id}__table",
+        "viz_type": CHART_TYPE,
+        "groupby": DIMENSIONS,
+        "metrics": METRICS,
+        "adhoc_filters": [],
+        "row_limit": 10000,
+        **CHART_OPTIONS
+    }),
+    "query_context": json.dumps({
+        "datasource": {
+            "id": dataset_id,
+            "type": "table"
+        },
+        "queries": [{
+            "columns": DIMENSIONS,
+            "metrics": METRICS,
+            "orderby": [],
+            "row_limit": 10000
+        }]
+    })
+}
+
+# Create the chart
+response = session.post("http://localhost:8088/api/v1/chart/", headers=headers, json=chart_payload)
+
+if response.status_code == 201:
+    chart_id = response.json()['id']
+    print(f"✅ Chart '{CHART_NAME}' created successfully!")
+    print(f"   Chart ID: {chart_id}")
+    print(f"   Dataset: {DATASET_NAME}")
+    print(f"   Type: {CHART_TYPE}")
+    print(f"   Dimensions: {DIMENSIONS}")
+    print(f"   Metrics: {METRICS}")
+else:
+    print(f"❌ Failed to create chart: {response.text}")
+    print(f"Status Code: {response.status_code}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# =============================================================================
+# CHART CONFIGURATION - MODIFY THIS SECTION
+# =============================================================================
+
+# Dataset and Chart Details
+DATASET_NAME = "Transaction Volume by Device Type"        # Replace with your dataset name
+CHART_NAME = "Transaction Volume by Device Type"            # Replace with your chart name
+CHART_TYPE = "pie"                             # pie, dist_bar, line, area, table
+
+# Chart Data Configuration
+DIMENSIONS = ["device_type"]        
+METRICS = [{ "label": "transaction_count",
+             "expressionType": "SQL",
+             "sqlExpression": "SUM(transaction_count)"  
+          }]      
+
+# Chart Options (modify as needed)
+CHART_OPTIONS = {
+    # For Pie Charts
+    "donut": False,                            # True for donut chart
+    "show_labels": True,
+    "pie_label_type": "key_percent",           # key, value, percent, key_value, key_percent
+    
+    # For Bar Charts
+    "bar_stacked": False,                      # True for stacked bars
+    "show_legend": True,
+    "x_axis_label": "Your X Label",
+    "y_axis_label": "Your Y Label",
+    
+    # For Line Charts
+    "show_markers": True,
+    "line_interpolation": "linear",            # linear, basis, cardinal, monotone
+    
+    # General Options
+    "color_scheme": "supersetColors"
+}
+
+# =============================================================================
+# CHART CREATION - DON'T MODIFY BELOW THIS LINE
+# =============================================================================
+
+# Get dataset ID
+dataset_id = get_dataset_id_by_name(DATASET_NAME)
+if not dataset_id:
+    print(f"❌ Dataset '{DATASET_NAME}' not found")
+    exit(1)
+
+print(f"✅ Found dataset '{DATASET_NAME}' with ID: {dataset_id}")
+
+# Create chart payload
+chart_payload = {
+    "datasource_id": dataset_id,
+    "datasource_type": "table",
+    "slice_name": CHART_NAME,
+    "viz_type": CHART_TYPE,
+    "params": json.dumps({
+        "datasource": f"{dataset_id}__table",
+        "viz_type": CHART_TYPE,
+        "groupby": DIMENSIONS,
+        "metrics": METRICS,
+        "adhoc_filters": [],
+        "row_limit": 10000,
+        **CHART_OPTIONS
+    }),
+    "query_context": json.dumps({
+        "datasource": {
+            "id": dataset_id,
+            "type": "table"
+        },
+        "queries": [{
+            "columns": DIMENSIONS,
+            "metrics": METRICS,
+            "orderby": [],
+            "row_limit": 10000
+        }]
+    })
+}
+
+# Create the chart
+response = session.post("http://localhost:8088/api/v1/chart/", headers=headers, json=chart_payload)
+
+if response.status_code == 201:
+    chart_id = response.json()['id']
+    print(f"✅ Chart '{CHART_NAME}' created successfully!")
+    print(f"   Chart ID: {chart_id}")
+    print(f"   Dataset: {DATASET_NAME}")
+    print(f"   Type: {CHART_TYPE}")
+    print(f"   Dimensions: {DIMENSIONS}")
+    print(f"   Metrics: {METRICS}")
+else:
+    print(f"❌ Failed to create chart: {response.text}")
+    print(f"Status Code: {response.status_code}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import requests
+import json
+from datetime import datetime
+
+# Configuration
+SUPERSET_URL = "http://localhost:8088"
+ADMIN_CREDS = {"username": "admin", "password": "admin", "provider": "db"}
+
+# 1. Authenticate
+session = requests.Session()
+response = session.post(f"{SUPERSET_URL}/api/v1/security/login", json=ADMIN_CREDS)
+if response.status_code != 200:
+    print(f"❌ Login failed: {response.text}")
+    exit(1)
+access_token = response.json()["access_token"]
+headers = {
+    "Authorization": f"Bearer {access_token}",
+    "Content-Type": "application/json",
+    "X-CSRFToken": session.get(
+        f"{SUPERSET_URL}/api/v1/security/csrf_token/",
+        headers={"Authorization": f"Bearer {access_token}"}
+    ).json()["result"]
+}
+print("✅ Authenticated successfully")
+
+# 2. Get Dataset ID
+datasets = session.get(f"{SUPERSET_URL}/api/v1/dataset/", headers=headers).json()["result"]
+dataset_id = next(
+    (ds["id"] for ds in datasets if ds["table_name"] == "Total Transaction Amount by Product Category"),
+    None
+)
+if not dataset_id:
+    print(f"❌ Dataset 'Total Transaction Amount by Product Category' not found")
+    exit(1)
+print(f"✅ Dataset ID: {dataset_id}")
+
+# 3. Create Chart with VERIFIED Configuration
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+chart_name = f"Revenue by Product Category "
+chart_config = {
+    "datasource": f"{dataset_id}__table",
+    "viz_type": "dist_bar",
+    "metrics": [{
+        "label": "Total Transaction Amount",
+        "expressionType": "SQL",
+        "sqlExpression": "SUM(total_transaction_amount)"  # Use SQL expression to match UI fix
+    }],
+    "groupby": ["product_category"],
+    "row_limit": 10000,
+    "color_scheme": "supersetColors",
+    "show_legend": True,
+    "rich_tooltip": True,
+    "bar_stacked": False,
+    "x_axis_label": "Product Category",
+    "y_axis_label": "Total Transaction Amount"
+}
+
+# 4. Create the Chart
+response = session.post(
+    f"{SUPERSET_URL}/api/v1/chart/",
+    headers=headers,
+    json={
+        "slice_name": chart_name,
+        "params": json.dumps(chart_config),
+        "viz_type": "dist_bar",
+        "datasource_id": dataset_id,
+        "datasource_type": "table",
+        "owners": [1]  # admin user ID
+    }
+)
+
+if response.status_code == 201:
+    print(f"✅ SUCCESS! View your chart at: {SUPERSET_URL}/superset/explore/?slice_id={response.json()['id']}")
+    print("Chart shows: Product Categories vs Total Transaction Amount")
+else:
+    print(f"❌ Failed to create chart: {response.text}")
+    print("Please do this quick manual fix:")
+    print("1. Go to Superset UI -> Charts")
+    print(f"2. Open '{chart_name}'")
+    print("3. In the Metrics section, remove any invalid metric")
+    print("4. Drag 'total_transaction_amount' from Columns to Metrics")
+    print("5. Select 'SUM' as the aggregate and save")
+    print("6. Run this script again if needed")
