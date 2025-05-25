@@ -83,7 +83,7 @@ The system is divided into three main components within a Dockerized environment
 - **Purpose:** Ensures system health, tracks latency, throughput, and resource usage.
 
 ### Architecture Diagram
-![Architecture Diagram](path/to/architecture_diagram.png)  
+![Architecture Diagram](architecture_diagram.png)  
 *Note:* Update the path to the diagram if you’ve included it in the repository.
 
 ## Usage
