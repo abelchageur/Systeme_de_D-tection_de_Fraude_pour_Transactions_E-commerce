@@ -1,0 +1,2 @@
+you can find data in this link : 
+https://www.kaggle.com/datasets/shriyashjagtap/fraudulent-e-commerce-transactions
